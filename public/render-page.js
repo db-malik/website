@@ -9529,7 +9529,7 @@ const StyledAboutSection = styled_components__WEBPACK_IMPORTED_MODULE_4__["defau
 })(["max-width:900px;.inner{display:grid;grid-template-columns:3fr 2fr;grid-gap:50px;@media (max-width:768px){display:block;}}"]);
 const StyledText = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "about__StyledText"
-})(["ul.skills-list{display:grid;grid-template-columns:repeat(2,minmax(140px,200px));grid-gap:0 10px;padding:0;margin:20px 0 0 0;overflow:hidden;list-style:none;li{position:relative;margin-bottom:10px;padding-left:20px;font-family:var(--font-mono);font-size:var(--fz-xs);&:before{content:'\u25B9';position:absolute;left:0;color:var(--green);font-size:var(--fz-sm);line-height:12px;}}}"]);
+})([".skills{margin-top:50px;}.skills-content{display:flex;gap:3vw;flex-wrap:wrap;}ul.skills-list{display:flex;flex-direction:column;padding:0;margin:20px 0 0 0;overflow:hidden;list-style:none;li{position:relative;margin-bottom:10px;padding-left:20px;font-family:var(--font-mono);font-size:var(--fz-xs);&:before{content:'\u25B9';position:absolute;left:0;color:var(--green);font-size:var(--fz-sm);line-height:12px;}}}"]);
 const StyledPic = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "about__StyledPic"
 })(["position:relative;max-width:300px;@media (max-width:768px){margin:50px auto 0;width:70%;}.wrapper{", ";display:block;position:relative;width:100%;border-radius:var(--border-radius);background-color:var(--green);&:hover,&:focus{outline:0;&:after{top:15px;left:15px;}.img{filter:none;mix-blend-mode:normal;}}.img{position:relative;border-radius:var(--border-radius);mix-blend-mode:multiply;filter:grayscale(100%) contrast(1);transition:var(--transition);}&:before,&:after{content:'';display:block;position:absolute;width:100%;height:100%;border-radius:var(--border-radius);transition:var(--transition);}&:before{top:0;left:0;background-color:var(--navy);mix-blend-mode:screen;}&:after{border:2px solid var(--green);top:20px;left:20px;z-index:-1;}}"], ({
@@ -9544,7 +9544,11 @@ const About = () => {
     }
     _utils_sr__WEBPACK_IMPORTED_MODULE_2__["default"].reveal(revealContainer.current, (0,_config__WEBPACK_IMPORTED_MODULE_1__.srConfig)());
   }, []);
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = {
+    framework: ['React', 'Next.js', 'Node.js', 'Express.js', 'Bootstrap', 'MaterialUI'],
+    language: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'SQL'],
+    outil: ['PHP', 'Laravel', 'MySQL', 'MongoDB', 'Docker', 'Git/GitHub']
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledAboutSection, {
     id: "about",
     ref: revealContainer
@@ -9552,23 +9556,13 @@ const About = () => {
     className: "numbered-heading"
   }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "inner"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes \u2014 turns out hacking together a custom reblog button taught me a lot about HTML & CSS!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Fast-forward to today, and I\u2019ve had the privilege of working at", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://us.mullenlowe.com/"
-  }, "an advertising agency"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://starry.com/"
-  }, "a start-up"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.apple.com/"
-  }, "a huge corporation"), ", and", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://scout.camd.northeastern.edu/"
-  }, "a student-led design studio"), ". My main focus these days is building accessible, inclusive products and digital experiences at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://upstatement.com/"
-  }, "Upstatement"), " for a variety of clients."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I also recently", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.newline.co/courses/build-a-spotify-connected-app"
-  }, "launched a course"), ' ', "that covers everything you need to build a web app with the Spotify API using Node & React."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Here are a few technologies I\u2019ve been working with recently:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "skills-list"
-  }, skills && skills.map((skill, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    key: i
-  }, skill)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledPic, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating things that live on the internet. I'm passionate about UI effects, animations, and developing dynamic, intuitive user interfaces. I've worked using different technologies, both backend and frontend. I'm currently working using", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.javascript.com/"
+  }, "Javascript"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.typescriptlang.org/"
+  }, "typescript"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.php.net/"
+  }, "PHP"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "My goal is to build highly performant applications that solve real-world problems and provide users with an awesome experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Well-organized, problem-solver, and independent employee with great attention to detail. Fan of football, TV shows, and outdoor activities like traveling and camping."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledPic, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
     className: "img",
@@ -9578,7 +9572,25 @@ const About = () => {
     formats: ['AUTO', 'WEBP', 'AVIF'],
     alt: "Headshot",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3648988202.json */ "./.cache/caches/gatsby-plugin-image/3648988202.json")
-  })))));
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "skills-title"
+  }, "Skills"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "skills-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "skills-list"
+  }, skills && skills.framework.map((skill, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    key: i
+  }, skill))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "skills-list"
+  }, skills && skills.language.map((skill, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    key: i
+  }, skill))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "skills-list"
+  }, skills && skills.outil.map((skill, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    key: i
+  }, skill)))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
 
@@ -9637,6 +9649,197 @@ const Contact = () => {
 
 /***/ }),
 
+/***/ "./src/components/sections/education.js":
+/*!**********************************************!*\
+  !*** ./src/components/sections/education.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_3962018228_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3962018228.json */ "./public/page-data/sq/d/3962018228.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/CSSTransition.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @config */ "./src/config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @utils */ "./src/utils/index.js");
+/* harmony import */ var _utils_sr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @utils/sr */ "./src/utils/sr.js");
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @hooks */ "./src/hooks/index.js");
+
+
+
+
+
+
+
+
+const StyledJobsSection = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].section.withConfig({
+  displayName: "education__StyledJobsSection"
+})(["max-width:700px;.inner{display:flex;@media (max-width:600px){display:block;}@media (min-width:700px){min-height:340px;}}"]);
+const StyledTabList = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "education__StyledTabList"
+})(["position:relative;z-index:3;width:max-content;padding:0;margin:0;list-style:none;@media (max-width:600px){display:flex;overflow-x:auto;width:calc(100% + 100px);padding-left:50px;margin-left:-50px;margin-bottom:30px;}@media (max-width:480px){width:calc(100% + 50px);padding-left:25px;margin-left:-25px;}li{&:first-of-type{@media (max-width:600px){margin-left:50px;}@media (max-width:480px){margin-left:25px;}}&:last-of-type{@media (max-width:600px){padding-right:50px;}@media (max-width:480px){padding-right:25px;}}}"]);
+const StyledTabButton = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].button.withConfig({
+  displayName: "education__StyledTabButton"
+})(["", ";display:flex;align-items:center;width:100%;height:var(--tab-height);padding:0 20px 2px;border-left:2px solid var(--lightest-navy);background-color:transparent;color:", ";font-family:var(--font-mono);font-size:var(--fz-xs);text-align:left;white-space:nowrap;@media (max-width:768px){padding:0 15px 2px;}@media (max-width:600px){", ";min-width:120px;padding:0 15px;border-left:0;border-bottom:2px solid var(--lightest-navy);text-align:center;}&:hover,&:focus{background-color:var(--light-navy);}"], ({
+  theme
+}) => theme.mixins.link, ({
+  isActive
+}) => isActive ? 'var(--green)' : 'var(--slate)', ({
+  theme
+}) => theme.mixins.flexCenter);
+const StyledHighlight = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "education__StyledHighlight"
+})(["position:absolute;top:0;left:0;z-index:10;width:2px;height:var(--tab-height);border-radius:var(--border-radius);background:var(--green);transform:translateY(calc(", " * var(--tab-height)));transition:transform 0.25s cubic-bezier(0.645,0.045,0.355,1);transition-delay:0.1s;@media (max-width:600px){top:auto;bottom:0;width:100%;max-width:var(--tab-width);height:2px;margin-left:50px;transform:translateX(calc(", " * var(--tab-width)));}@media (max-width:480px){margin-left:25px;}"], ({
+  activeTabId
+}) => activeTabId, ({
+  activeTabId
+}) => activeTabId);
+const StyledTabPanels = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "education__StyledTabPanels"
+})(["position:relative;width:100%;margin-left:20px;@media (max-width:600px){margin-left:0;}"]);
+const StyledTabPanel = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "education__StyledTabPanel"
+})(["width:100%;height:auto;padding:10px 5px;ul{", ";}h3{margin-bottom:2px;font-size:var(--fz-xxl);font-weight:500;line-height:1.3;.company{color:var(--green);}}.range{margin-bottom:25px;color:var(--light-slate);font-family:var(--font-mono);font-size:var(--fz-xs);}"], ({
+  theme
+}) => theme.mixins.fancyList);
+const Education = () => {
+  const data = _public_page_data_sq_d_3962018228_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const jobsData = data.jobs.edges;
+  const {
+    0: activeTabId,
+    1: setActiveTabId
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
+  const {
+    0: tabFocus,
+    1: setTabFocus
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const tabs = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)([]);
+  const revealContainer = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
+  const prefersReducedMotion = (0,_hooks__WEBPACK_IMPORTED_MODULE_5__.usePrefersReducedMotion)();
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (prefersReducedMotion) {
+      return;
+    }
+    _utils_sr__WEBPACK_IMPORTED_MODULE_4__["default"].reveal(revealContainer.current, (0,_config__WEBPACK_IMPORTED_MODULE_2__.srConfig)());
+  }, []);
+  const focusTab = () => {
+    if (tabs.current[tabFocus]) {
+      tabs.current[tabFocus].focus();
+      return;
+    }
+    // If we're at the end, go to the start
+    if (tabFocus >= tabs.current.length) {
+      setTabFocus(0);
+    }
+    // If we're at the start, move to the end
+    if (tabFocus < 0) {
+      setTabFocus(tabs.current.length - 1);
+    }
+  };
+
+  // Only re-run the effect if tabFocus changes
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => focusTab(), [tabFocus]);
+
+  // Focus on tabs when using up & down arrow keys
+  const onKeyDown = e => {
+    switch (e.key) {
+      case _utils__WEBPACK_IMPORTED_MODULE_3__.KEY_CODES.ARROW_UP:
+        {
+          e.preventDefault();
+          setTabFocus(tabFocus - 1);
+          break;
+        }
+      case _utils__WEBPACK_IMPORTED_MODULE_3__.KEY_CODES.ARROW_DOWN:
+        {
+          e.preventDefault();
+          setTabFocus(tabFocus + 1);
+          break;
+        }
+      default:
+        {
+          break;
+        }
+    }
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledJobsSection, {
+    id: "jobs",
+    ref: revealContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
+    className: "numbered-heading"
+  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: "inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabList, {
+    role: "tablist",
+    "aria-label": "Job tabs",
+    onKeyDown: e => onKeyDown(e)
+  }, jobsData && jobsData.map(({
+    node
+  }, i) => {
+    const {
+      title
+    } = node.frontmatter;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabButton, {
+      key: i,
+      isActive: activeTabId === i,
+      onClick: () => setActiveTabId(i),
+      ref: el => tabs.current[i] = el,
+      id: `tab-${i}`,
+      role: "tab",
+      tabIndex: activeTabId === i ? '0' : '-1',
+      "aria-selected": activeTabId === i ? true : false,
+      "aria-controls": `panel-${i}`
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, title));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledHighlight, {
+    activeTabId: activeTabId
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabPanels, null, jobsData && jobsData.map(({
+    node
+  }, i) => {
+    const {
+      frontmatter,
+      html
+    } = node;
+    const {
+      title,
+      url,
+      school,
+      range
+    } = frontmatter;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      key: i,
+      in: activeTabId === i,
+      timeout: 250,
+      classNames: "fade"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabPanel, {
+      id: `panel-${i}`,
+      role: "tabpanel",
+      tabIndex: activeTabId === i ? '0' : '-1',
+      "aria-labelledby": `tab-${i}`,
+      "aria-hidden": activeTabId !== i,
+      hidden: activeTabId !== i
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", {
+      className: "company"
+    }, "\xA0@\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+      href: url,
+      className: "inline-link"
+    }, school))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+      className: "range"
+    }, range), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      dangerouslySetInnerHTML: {
+        __html: html
+      }
+    })));
+  }))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Education);
+
+/***/ }),
+
 /***/ "./src/components/sections/featured.js":
 /*!*********************************************!*\
   !*** ./src/components/sections/featured.js ***!
@@ -9648,7 +9851,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_2031412112_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/2031412112.json */ "./public/page-data/sq/d/2031412112.json");
+/* harmony import */ var _public_page_data_sq_d_4162897811_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/4162897811.json */ "./public/page-data/sq/d/4162897811.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -9673,7 +9876,7 @@ const StyledProjectsGrid = styled_components__WEBPACK_IMPORTED_MODULE_6__["defau
 }) => theme.mixins.resetList);
 const StyledProject = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].li.withConfig({
   displayName: "featured__StyledProject"
-})(["position:relative;display:grid;grid-gap:10px;grid-template-columns:repeat(12,1fr);align-items:center;@media (max-width:768px){", ";}&:not(:last-of-type){margin-bottom:100px;@media (max-width:768px){margin-bottom:70px;}@media (max-width:480px){margin-bottom:30px;}}&:nth-of-type(odd){.project-content{grid-column:7 / -1;text-align:right;@media (max-width:1080px){grid-column:5 / -1;}@media (max-width:768px){grid-column:1 / -1;padding:40px 40px 30px;text-align:left;}@media (max-width:480px){padding:25px 25px 20px;}}.project-tech-list{justify-content:flex-end;@media (max-width:768px){justify-content:flex-start;}li{margin:0 0 5px 20px;@media (max-width:768px){margin:0 10px 5px 0;}}}.project-links{justify-content:flex-end;margin-left:0;margin-right:-10px;@media (max-width:768px){justify-content:flex-start;margin-left:-10px;margin-right:0;}}.project-image{grid-column:1 / 8;@media (max-width:768px){grid-column:1 / -1;}}}.project-content{position:relative;grid-column:1 / 7;grid-row:1 / -1;@media (max-width:1080px){grid-column:1 / 9;}@media (max-width:768px){display:flex;flex-direction:column;justify-content:center;height:100%;grid-column:1 / -1;padding:40px 40px 30px;z-index:5;}@media (max-width:480px){padding:30px 25px 20px;}}.project-overline{margin:10px 0;color:var(--green);font-family:var(--font-mono);font-size:var(--fz-xs);font-weight:400;}.project-title{color:var(--lightest-slate);font-size:clamp(24px,5vw,28px);@media (min-width:768px){margin:0 0 20px;}@media (max-width:768px){color:var(--white);a{position:static;&:before{content:'';display:block;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;}}}}.project-description{", ";position:relative;z-index:2;padding:25px;border-radius:var(--border-radius);background-color:var(--light-navy);color:var(--light-slate);font-size:var(--fz-lg);@media (max-width:768px){padding:20px 0;background-color:transparent;box-shadow:none;&:hover{box-shadow:none;}}a{", ";}strong{color:var(--white);font-weight:normal;}}.project-tech-list{display:flex;flex-wrap:wrap;position:relative;z-index:2;margin:25px 0 10px;padding:0;list-style:none;li{margin:0 20px 5px 0;color:var(--light-slate);font-family:var(--font-mono);font-size:var(--fz-xs);white-space:nowrap;}@media (max-width:768px){margin:10px 0;li{margin:0 10px 5px 0;color:var(--lightest-slate);}}}.project-links{display:flex;align-items:center;position:relative;margin-top:10px;margin-left:-10px;color:var(--lightest-slate);a{", ";padding:10px;&.external{svg{width:22px;height:22px;margin-top:-4px;}}svg{width:20px;height:20px;}}.cta{", ";margin:10px;}}.project-image{", ";grid-column:6 / -1;grid-row:1 / -1;position:relative;z-index:1;@media (max-width:768px){grid-column:1 / -1;height:100%;opacity:0.25;}a{width:100%;height:100%;background-color:var(--green);border-radius:var(--border-radius);vertical-align:middle;&:hover,&:focus{background:transparent;outline:0;&:before,.img{background:transparent;filter:none;}}&:before{content:'';position:absolute;width:100%;height:100%;top:0;left:0;right:0;bottom:0;z-index:3;transition:var(--transition);background-color:var(--navy);mix-blend-mode:screen;}}.img{border-radius:var(--border-radius);mix-blend-mode:multiply;filter:grayscale(100%) contrast(1) brightness(90%);@media (max-width:768px){object-fit:cover;width:auto;height:100%;filter:grayscale(100%) contrast(1) brightness(50%);}}}"], ({
+})(["position:relative;display:grid;grid-gap:10px;grid-template-columns:repeat(12,1fr);align-items:center;@media (max-width:768px){", ";}&:not(:last-of-type){margin-bottom:100px;@media (max-width:768px){margin-bottom:70px;}@media (max-width:480px){margin-bottom:30px;}}&:nth-of-type(odd){.project-content{grid-column:7 / -1;text-align:left;@media (max-width:1080px){grid-column:5 / -1;}@media (max-width:768px){grid-column:1 / -1;padding:40px 40px 30px;text-align:left;}@media (max-width:480px){padding:25px 25px 20px;}}.project-title,.project-overline{text-align:right;}.project-tech-list{justify-content:flex-end;@media (max-width:768px){justify-content:flex-start;}li{margin:0 0 5px 20px;@media (max-width:768px){margin:0 10px 5px 0;}}}.project-links{justify-content:flex-end;margin-left:0;margin-right:-10px;@media (max-width:768px){justify-content:flex-start;margin-left:-10px;margin-right:0;}}.project-image{grid-column:1 / 8;@media (max-width:768px){grid-column:1 / -1;}}}.project-content{position:relative;grid-column:1 / 7;grid-row:1 / -1;@media (max-width:1080px){grid-column:1 / 9;}@media (max-width:768px){display:flex;flex-direction:column;justify-content:center;height:100%;grid-column:1 / -1;padding:40px 40px 30px;z-index:5;}@media (max-width:480px){padding:30px 25px 20px;}}.project-overline{margin:10px 0;color:var(--green);font-family:var(--font-mono);font-size:var(--fz-xs);font-weight:400;}.project-title{color:var(--lightest-slate);font-size:clamp(24px,5vw,28px);@media (min-width:768px){margin:0 0 20px;}@media (max-width:768px){color:var(--white);a{position:static;&:before{content:'';display:block;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;}}}}.project-description{", ";position:relative;z-index:2;padding:25px;border-radius:var(--border-radius);background-color:var(--light-navy);color:var(--light-slate);font-size:var(--fz-lg);@media (max-width:768px){padding:20px 0;background-color:transparent;box-shadow:none;&:hover{box-shadow:none;}}a{", ";}strong{color:var(--white);font-weight:normal;}}.project-tech-list{display:flex;flex-wrap:wrap;position:relative;z-index:2;margin:25px 0 10px;padding:0;list-style:none;li{margin:0 20px 5px 0;color:var(--light-slate);font-family:var(--font-mono);font-size:var(--fz-xs);white-space:nowrap;}@media (max-width:768px){margin:10px 0;li{margin:0 10px 5px 0;color:var(--lightest-slate);}}}.project-links{display:flex;align-items:center;position:relative;margin-top:10px;margin-left:-10px;color:var(--lightest-slate);a{", ";padding:10px;&.external{svg{width:22px;height:22px;margin-top:-4px;}}svg{width:20px;height:20px;}}.cta{", ";margin:10px;}}.project-image{", ";grid-column:6 / -1;grid-row:1 / -1;position:relative;z-index:1;@media (max-width:768px){grid-column:1 / -1;height:100%;opacity:0.25;}a{width:100%;height:100%;background-color:var(--green);border-radius:var(--border-radius);vertical-align:middle;&:hover,&:focus{background:transparent;outline:0;&:before,.img{background:transparent;filter:none;}}&:before{content:'';position:absolute;width:100%;height:100%;top:0;left:0;right:0;bottom:0;z-index:3;transition:var(--transition);background-color:var(--navy);mix-blend-mode:screen;}}.img{border-radius:var(--border-radius);mix-blend-mode:multiply;filter:grayscale(100%) contrast(1) brightness(90%);@media (max-width:768px){object-fit:cover;width:auto;height:100%;filter:grayscale(100%) contrast(1) brightness(50%);}}}"], ({
   theme
 }) => theme.mixins.boxShadow, ({
   theme
@@ -9687,7 +9890,7 @@ const StyledProject = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].
   theme
 }) => theme.mixins.boxShadow);
 const Featured = () => {
-  const data = _public_page_data_sq_d_2031412112_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_4162897811_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const featuredProjects = data.featured.edges.filter(({
     node
   }) => node);
@@ -9744,16 +9947,12 @@ const Featured = () => {
       key: i
     }, tech))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "project-links"
-    }, cta && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
-      href: cta,
-      "aria-label": "Course Link",
-      className: "cta"
-    }, "Learn More"), github && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    }, github && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
       href: github,
       "aria-label": "GitHub Link"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_icons__WEBPACK_IMPORTED_MODULE_4__.Icon, {
       name: "GitHub"
-    })), external && !cta && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    })), external && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
       href: external,
       "aria-label": "External Link",
       className: "external"
@@ -9973,7 +10172,7 @@ const Jobs = () => {
     ref: revealContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
     className: "numbered-heading"
-  }, "Where I\u2019ve Worked"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }, "Experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "inner"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabList, {
     role: "tablist",
@@ -9983,7 +10182,7 @@ const Jobs = () => {
     node
   }, i) => {
     const {
-      company
+      title
     } = node.frontmatter;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabButton, {
       key: i,
@@ -9995,7 +10194,7 @@ const Jobs = () => {
       tabIndex: activeTabId === i ? '0' : '-1',
       "aria-selected": activeTabId === i ? true : false,
       "aria-controls": `panel-${i}`
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, company));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, title));
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledHighlight, {
     activeTabId: activeTabId
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledTabPanels, null, jobsData && jobsData.map(({
@@ -10667,15 +10866,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components */ "./src/components/index.js");
+/* harmony import */ var _components_sections_education__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/sections/education */ "./src/components/sections/education.js");
 
 
 
 
-const StyledMainContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].main.withConfig({
+
+const StyledMainContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].main.withConfig({
   displayName: "pages__StyledMainContainer"
 })(["counter-reset:section;"]);
 const IndexPage = ({
@@ -10684,9 +10885,9 @@ const IndexPage = ({
   location: location
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledMainContainer, {
   className: "fillHeight"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Hero, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.About, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Jobs, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Featured, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Projects, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Contact, null)));
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Hero, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.About, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Jobs, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_education__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Featured, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Projects, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Contact, null)));
 IndexPage.propTypes = {
-  location: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object.isRequired)
+  location: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object.isRequired)
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
@@ -50323,7 +50524,7 @@ function _setPrototypeOf(o, p) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e8e8e8","images":{"fallback":{"src":"/static/30a645f7db6038f83287d0c6042d3b2b/25f3c/me.jpg","srcSet":"/static/30a645f7db6038f83287d0c6042d3b2b/2dd75/me.jpg 125w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/754ad/me.jpg 250w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/25f3c/me.jpg 500w","sizes":"(min-width: 500px) 500px, 100vw"},"sources":[{"srcSet":"/static/30a645f7db6038f83287d0c6042d3b2b/aebc8/me.avif 125w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/6b255/me.avif 250w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif 500w","type":"image/avif","sizes":"(min-width: 500px) 500px, 100vw"},{"srcSet":"/static/30a645f7db6038f83287d0c6042d3b2b/4155f/me.webp 125w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/02deb/me.webp 250w,\\n/static/30a645f7db6038f83287d0c6042d3b2b/1ee78/me.webp 500w","type":"image/webp","sizes":"(min-width: 500px) 500px, 100vw"}]},"width":500,"height":500}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#d8c8b8","images":{"fallback":{"src":"/static/c4375b86d69ac8114168905067a86175/d218e/me.png","srcSet":"/static/c4375b86d69ac8114168905067a86175/a84e3/me.png 125w,\\n/static/c4375b86d69ac8114168905067a86175/64938/me.png 250w,\\n/static/c4375b86d69ac8114168905067a86175/d218e/me.png 500w,\\n/static/c4375b86d69ac8114168905067a86175/fa8cd/me.png 1000w","sizes":"(min-width: 500px) 500px, 100vw"},"sources":[{"srcSet":"/static/c4375b86d69ac8114168905067a86175/aebc8/me.avif 125w,\\n/static/c4375b86d69ac8114168905067a86175/6b255/me.avif 250w,\\n/static/c4375b86d69ac8114168905067a86175/f9526/me.avif 500w,\\n/static/c4375b86d69ac8114168905067a86175/54f6b/me.avif 1000w","type":"image/avif","sizes":"(min-width: 500px) 500px, 100vw"},{"srcSet":"/static/c4375b86d69ac8114168905067a86175/4155f/me.webp 125w,\\n/static/c4375b86d69ac8114168905067a86175/02deb/me.webp 250w,\\n/static/c4375b86d69ac8114168905067a86175/1ee78/me.webp 500w,\\n/static/c4375b86d69ac8114168905067a86175/873fb/me.webp 1000w","type":"image/webp","sizes":"(min-width: 500px) 500px, 100vw"}]},"width":500,"height":500}');
 
 /***/ }),
 
@@ -50356,18 +50557,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"defaultTitle":"Br
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Engineer","company":"Upstatement","location":"Boston, MA","range":"May 2018 - Present","url":"https://www.upstatement.com/"},"html":"<ul>\\n<li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>\\n<li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>\\n<li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Studio Developer","company":"Scout","location":"Northeastern University","range":"January - April 2018","url":"https://web.northeastern.edu/scout/"},"html":"<ul>\\n<li>Worked with a team of three designers to build a marketing website and e-commerce platform for <a href=\\"https://blistabloc.com\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">blistabloc</a>, an ambitious startup originating from Northeastern</li>\\n<li>Helped solidify a brand direction for blistabloc that spans both packaging and web</li>\\n<li>Interfaced with clients on a weekly basis, providing technological expertise</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"UI Engineer Co-op","company":"Apple","location":"Cupertino, CA","range":"July - December 2017","url":"https://www.apple.com/music/"},"html":"<ul>\\n<li>Developed and shipped highly interactive web applications for Apple Music using Ember.js</li>\\n<li>Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs</li>\\n<li>Architected and implemented the front-end of Apple Music\'s embeddable web player widget, which lets users log in and listen to full songs in the browser</li>\\n<li>Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Studio Developer","company":"Scout","location":"Northeastern University","range":"January - June 2017","url":"https://web.northeastern.edu/scout/"},"html":"<ul>\\n<li>Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern</li>\\n<li>Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Software Engineer Co-op","company":"Starry","location":"Boston, MA","range":"July - December 2016","url":"https://starry.com/"},"html":"<ul>\\n<li>Engineered and maintained major features of Starry\'s customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS</li>\\n<li>Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station</li>\\n<li>Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry’s iOS and Android mobile apps</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Creative Technologist Co-op","company":"MullenLowe","location":"Boston, MA","range":"July - December 2015","url":"https://us.mullenlowe.com/"},"html":"<ul>\\n<li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</li>\\n<li>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>\\n<li>Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more</li>\\n</ul>"}}]}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/2031412112.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/2031412112.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"featured":{"edges":[{"node":{"frontmatter":{"title":"Halcyon Theme","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png","srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/cebcc/halcyon.png 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/272cf/halcyon.png 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/9aa63/halcyon.avif 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/e6db6/halcyon.avif 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/240e7/halcyon.webp 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/faefe/halcyon.webp 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d5dc4/halcyon.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["VS Code","Sublime Text","Atom","iTerm2","Hyper"],"github":"https://github.com/bchiang7/halcyon-site","external":"https://halcyon-theme.netlify.com/","cta":null},"html":"<p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a href=\\"https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Visual Studio Marketplace</a>, <a href=\\"https://packagecontrol.io/packages/Halcyon%20Theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Package Control</a>, <a href=\\"https://atom.io/themes/halcyon-syntax\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Atom Package Manager</a>, and <a href=\\"https://www.npmjs.com/package/hyper-halcyon-theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">npm</a>.</p>"}},{"node":{"frontmatter":{"title":"Spotify Profile","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQoz32Q0U7bQBBF/RogjuOynpmdXW/W2E4cEwEhjgmymqpq+tg8tEWq2opf4hf6p5VjZJBjuE+r2b177h3HtQEKQMKOCOvxOb4nZ4gfMOhxngOUEX+NWCHAW+aTwSkRdZxANAHxb796+v35nkGQJOoze57fgxUi8Nxv5Wb/4xeTGo896MM7TAz4ckFEQoiiKL7sdutqu6k+fdxuq6oyxgRBt54zcr3OCABms9myWK2L1WKRXy+vy81dqMNjuOMemRGxhjABIisOCAQEcIQ9kEc95nqFAFEUZVkmpaSDeszucNSmPc7fDNtD56UzPHOllNNpMjuIiACAmefzubWWiOIkzrIsTdPGppTK8zwM6xU4g8GJ1ubqqkySxFrbfq+YASCJ401RXsQXYRi2jZRSzPzcmVlf5kuttZTydeyx79/eLB++/zTGWGujg5RSANCsoO5MRFpze9ESfH+8KtZ//j5OJqZJnqapMQYRG/J/k6JW26WIe1kAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png","srcSet":"/static/3936989a99991beb6d649d7a7039df60/cebcc/demo.png 175w,\\n/static/3936989a99991beb6d649d7a7039df60/272cf/demo.png 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/9aa63/demo.avif 175w,\\n/static/3936989a99991beb6d649d7a7039df60/e6db6/demo.avif 350w,\\n/static/3936989a99991beb6d649d7a7039df60/f47db/demo.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/240e7/demo.webp 175w,\\n/static/3936989a99991beb6d649d7a7039df60/faefe/demo.webp 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d5dc4/demo.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["React","Styled Components","Express","Spotify API","Heroku"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://spotify-profile.herokuapp.com/","cta":null},"html":"<p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>"}},{"node":{"frontmatter":{"title":"Build a Spotify Connected App","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVQozwGfAmD9AKa44Jeq3Iqd1H+SznaIynKDx2+Ax2x9xWt8xWt8xmx+x2+ByXKDzXmK0HyO04WX142f2pKn3J2x3qW64QCgtdyps82VptSQotSImtB4jMlpfsJofcJle8FrgMRvhMZ1i8mBlc96ks2quuCQp9ePqdajut2Vs9ebu9cAmrHal6XDj6XSiqHTg5rOc4zHZH/AZX/AX3u9fZXJrLzcsMDfrsDelq/U5uz1r8bfmLjVvtXkjrnOjrzNAJWz3IGj1XaWy2yMxWSEwGGCvl5/u1l8ulp/ull/uV+Gu2ONvGGOumeWvY20zHSnwHSrv4S4xXy3wIPAwQCJq9FsX2JiXGFYYGtYXmhQV2FUW2dqi7hmkMJulsFnlb1ilblvob5pobpqpbh7tL9ztLpos7FvvLJ1w7MAg6jLQzk3Pzk3RURCRkRDNjUzQD8/nLfPlbnXlrrSjLfNea7ClMLMnMnOl8rJn9LNk87FYLymX8CkZ8emAHypzC0vMygsMyYrMCUnKC8vLFBQS2SRsWumyWmkwGanvGSqt2yyt3K7t2u7sGvArXHGrWjHplbFmFrKmQB4rM0pJSMzKygwKignIyAgGBI9ODN7qsGOw9iLws+Iw8uFxcaEycGW08d8zLaJ1LuZ3cKQ27tPypBQzo8AebrdWX2NX36PU3eNQm6FLlpuJ1RnO5KxPaK9O6KxOqaqOquiObCaNLORMrmKNr+GPMWGOseBP8yCStKIAH3J7G/F72C97FS35kuy4Eax20Kx1j2rxzqrvTqvtTmyqzi2ojm6mlHGn1nMnlDOlFHQkVnVk0/Ui0TUggB3zO9mw+pYveZNuOFCs9s6sNQ2r80zscgys78xtbUxuaoxvJ8ywJZJy5pS0ZlQ05JO1YxY2ZBU2otE138AtHoe7OPKgAAAAABJRU5ErkJggg=="},"images":{"fallback":{"src":"/static/4e06bd39766c182ea26b255309b1dee1/bc3b9/course-card.png","srcSet":"/static/4e06bd39766c182ea26b255309b1dee1/9a130/course-card.png 175w,\\n/static/4e06bd39766c182ea26b255309b1dee1/a3fa1/course-card.png 350w,\\n/static/4e06bd39766c182ea26b255309b1dee1/bc3b9/course-card.png 700w,\\n/static/4e06bd39766c182ea26b255309b1dee1/87926/course-card.png 1400w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/4e06bd39766c182ea26b255309b1dee1/dae43/course-card.avif 175w,\\n/static/4e06bd39766c182ea26b255309b1dee1/d7667/course-card.avif 350w,\\n/static/4e06bd39766c182ea26b255309b1dee1/7ec1a/course-card.avif 700w,\\n/static/4e06bd39766c182ea26b255309b1dee1/71a30/course-card.avif 1400w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/4e06bd39766c182ea26b255309b1dee1/5d873/course-card.webp 175w,\\n/static/4e06bd39766c182ea26b255309b1dee1/26a00/course-card.webp 350w,\\n/static/4e06bd39766c182ea26b255309b1dee1/f23f0/course-card.webp 700w,\\n/static/4e06bd39766c182ea26b255309b1dee1/2c2d0/course-card.webp 1400w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":394}}},"tech":["React","Express","Spotify API","Styled Components"],"github":null,"external":"https://www.newline.co/courses/build-a-spotify-connected-app","cta":"https://www.newline.co/courses/build-a-spotify-connected-app"},"html":"<p>Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.</p>\\n<p>Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify\'s OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.</p>"}}]}}}');
+module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Developer","company":"Ministry of National Defense","location":"Tunis, Tunisia","range":"June 2020 - Present","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Write modern code; ensure quality and maintenance through different\\ntesting practices: unit, integration, functional.</li>\\n<li>Developed and integrated new features and improved the user\\nexperience UX of a university educational platform.</li>\\n<li>Developed the main front-end features of a WMS using ReactJS.</li>\\n<li>Interfaced with clients on a weekly basis, providing technological expertise.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"IT Manager","company":"Military Academy","location":"Tunis, Tunisa","range":"September 2017 - May 2020","url":"http://www.emat.defense.tn/"},"html":"<ul>\\n<li>Control the IT infrastructure policy.</li>\\n<li>Web integrator: Taught more than 120 engineering students HTML,\\nCSS and JavaScript by making more than 20 mock-ups.</li>\\n<li>Troubleshot systems, diagnosing and resolving hardware or software\\nfaults.</li>\\n<li>Supported the roll-out of new applications</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Engineer Officer","company":"Ministry of National Defense","location":"Tunis, Tunisa","range":"July 2015 - August 2017","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Led more than 100-person combat unit to ensure operational readiness\\nincluding training programs, human resource management and\\nplanning.</li>\\n<li>Tested, repaired and maintained the weapons functionalities.</li>\\n</ul>"}}]}}}');
 
 /***/ }),
 
@@ -50378,7 +50568,29 @@ module.exports = JSON.parse('{"data":{"featured":{"edges":[{"node":{"frontmatter
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"projects":{"edges":[{"node":{"frontmatter":{"title":"Integrating Algolia Search with WordPress Multisite","tech":["Algolia","WordPress","PHP"],"github":"","external":"https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c"},"html":"<p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>"}},{"node":{"frontmatter":{"title":"Time to Have More Fun","tech":["Next.js","Tailwind CSS","Firebase"],"github":"https://github.com/bchiang7/time-to-have-more-fun","external":"https://time-to-have-more-fun.now.sh/"},"html":"<p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS</p>"}},{"node":{"frontmatter":{"title":"Building a Headless Mobile App CMS From Scratch","tech":["Node","Express","Firebase","Vue"],"github":"","external":"https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9"},"html":"<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement</p>"}},{"node":{"frontmatter":{"title":"OctoProfile","tech":["Next.js","Chart.js","GitHub API"],"github":"https://github.com/bchiang7/octoprofile","external":"https://octoprofile.now.sh"},"html":"<p>A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.</p>"}},{"node":{"frontmatter":{"title":"Google Keep Clone","tech":["Vue","Firebase"],"github":"https://github.com/bchiang7/google-keep-vue-firebase","external":"https://keep-vue.netlify.com/"},"html":"<p>A simple Google Keep clone built with Vue and Firebase.</p>"}},{"node":{"frontmatter":{"title":"Apple Music Embeddable Web Player Widget","tech":["MusicKit.js","JS","SCSS"],"github":"","external":"https://tools.applemusic.com/en-us"},"html":"<p>Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging <a href=\\"https://developer.apple.com/documentation/musickitjs\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">MusicKit.js</a>. Read more about this project on <a href=\\"https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">9to5Mac</a>.</p>"}},{"node":{"frontmatter":{"title":"Apple Music Facebook Messenger Integration","tech":["Ember","JS","SCSS"],"github":"","external":"https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming"},"html":"<p>Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on <a href=\\"https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">The Verge</a>.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V3","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/bchiang7.github.io","external":"https://bchiang7.github.io/v3/"},"html":"<p>Third iteration of my personal website built with Jekyll and hosted on GitHub Pages.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V2","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/v2","external":"https://bchiang7.github.io/v2/"},"html":"<p>Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.</p>"}},{"node":{"frontmatter":{"title":"Screentime 2.0","tech":["Cordova","Backbone","Marionette"],"github":"","external":"https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents"},"html":"<p>Starry Station android app feature that provided users with the ability to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their phones.</p>"}},{"node":{"frontmatter":{"title":"React Profile","tech":["React","CSS"],"github":"https://github.com/bchiang7/react-profile","external":"https://bchiang7.github.io/react-profile/"},"html":"<p>Online version of my 2016 resume made for fun. I was interested in learning React.js, so I found a simple tutorial and it spun into a weekend project.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V1","tech":["HTML","CSS","JS","Bootstrap"],"github":"https://github.com/bchiang7/v1","external":"https://bchiang7.github.io/v1/"},"html":"<p>My first portfolio website I designed and built in 2014. I learned quite a bit about HTML, CSS, and SEO. Since then, I think my web development and design skills have improved immensely.</p>"}},{"node":{"frontmatter":{"title":"Fontipsums","tech":["HTML","SCSS"],"github":"https://github.com/bchiang7/fontipsums/","external":"http://bchiang7.github.io/fontipsums/"},"html":"<p>Simple website to display some of my favorite font pairings combined with some fun lorem ipsum variations found on the web.</p>"}},{"node":{"frontmatter":{"title":"NU Women in Tech","tech":["Jekyll","Bootstrap"],"github":"https://github.com/nuwit/website","external":"https://nuwit.ccs.neu.edu/"},"html":"<p>Complete overhaul and redesign of NU Women in Tech’s club website using Jekyll, built while serving as web chair on the e-board.</p>"}}]}}}');
+module.exports = JSON.parse('{"data":{"projects":{"edges":[{"node":{"frontmatter":{"title":"E-Commerce website page","tech":["React","react-router","styled-components","slick-carousel"],"github":"https://github.com/db-malik/react-front-ecommerce","external":"https://react-front-ecommerce-7yncg4vlu-db-malik.vercel.app/"},"html":"<p>React Single page E-Commerce App Design</p>"}},{"node":{"frontmatter":{"title":"Animated Slider","tech":["HTML","CSS","JavaScript"],"github":"https://github.com/db-malik/slider-images/tree/main/src","external":"https://slider-images.vercel.app/"},"html":"<p>Building a custom slider component and text effect</p>"}},{"node":{"frontmatter":{"title":"Product Card","tech":["HTML5","CSS3","JavaScript"],"github":"https://github.com/db-malik/product-card-details","external":"https://product-card-details.vercel.app/"},"html":"<p>Card product include animation and product detail and validation button</p>"}},{"node":{"frontmatter":{"title":"Building a Headless Mobile App CMS From Scratch","tech":["Node","Express","Firebase","Vue"],"github":"","external":"https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9"},"html":"<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement</p>"}},{"node":{"frontmatter":{"title":"Transparent Login Form","tech":["HTML","CSS"],"github":"https://github.com/db-malik/transparent-login-form","external":"https://transparent-login-form-pearl.vercel.app/"},"html":"<p>Styled Form with transparet background</p>"}},{"node":{"frontmatter":{"title":"Personal Website V3","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/bchiang7.github.io","external":"https://bchiang7.github.io/v3/"},"html":"<p>Third iteration of my personal website built with Jekyll and hosted on GitHub Pages.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V2","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/v2","external":"https://bchiang7.github.io/v2/"},"html":"<p>Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.</p>"}},{"node":{"frontmatter":{"title":"Screentime 2.0","tech":["Cordova","Backbone","Marionette"],"github":"","external":"https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents"},"html":"<p>Starry Station android app feature that provided users with the ability to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their phones.</p>"}},{"node":{"frontmatter":{"title":"React Profile","tech":["React","CSS"],"github":"https://github.com/bchiang7/react-profile","external":"https://bchiang7.github.io/react-profile/"},"html":"<p>Online version of my 2016 resume made for fun. I was interested in learning React.js, so I found a simple tutorial and it spun into a weekend project.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V1","tech":["HTML","CSS","JS","Bootstrap"],"github":"https://github.com/bchiang7/v1","external":"https://bchiang7.github.io/v1/"},"html":"<p>My first portfolio website I designed and built in 2014. I learned quite a bit about HTML, CSS, and SEO. Since then, I think my web development and design skills have improved immensely.</p>"}},{"node":{"frontmatter":{"title":"Fontipsums","tech":["HTML","SCSS"],"github":"https://github.com/bchiang7/fontipsums/","external":"http://bchiang7.github.io/fontipsums/"},"html":"<p>Simple website to display some of my favorite font pairings combined with some fun lorem ipsum variations found on the web.</p>"}},{"node":{"frontmatter":{"title":"NU Women in Tech","tech":["Jekyll","Bootstrap"],"github":"https://github.com/nuwit/website","external":"https://nuwit.ccs.neu.edu/"},"html":"<p>Complete overhaul and redesign of NU Women in Tech’s club website using Jekyll, built while serving as web chair on the e-board.</p>"}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3962018228.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3962018228.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Engineering","school":"Superior School of Technology and Management SUPTECH","location":"Tunis, Tunisa","range":" 2017 -  2020","url":"https://suptech.tn/"},"html":"<ul>\\n<li>Clean code writing: Maintaining and understanding code easily.</li>\\n<li>Testing and debugging: Finding and resolving issues in code.</li>\\n<li>Computer science concepts: Understanding data structures, algorithms, and design patterns.</li>\\n<li>Proficiency in programming languages and tools: Efficient use of programming languages and tools.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Science and Technology Engineer","school":"ENSTA-Paris   &  Military Academy","location":"Tunis, Tunisa","range":" 2010 -  2015","url":"https://www.ensta-paris.fr/"},"html":"<ul>\\n<li>Weapon design and development: Creating and improving weapons systems.</li>\\n<li>Ballistic and aerodynamic analysis: Understanding the physics of projectiles and flight.</li>\\n<li>Materials and manufacturing: Knowledge of materials properties and manufacturing techniques.</li>\\n<li>Testing and evaluation: Assessing weapon performance and safety.</li>\\n</ul>"}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/4162897811.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/4162897811.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"featured":{"edges":[{"node":{"frontmatter":{"title":"Halcyon Theme","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png","srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/cebcc/halcyon.png 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/272cf/halcyon.png 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/9aa63/halcyon.avif 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/e6db6/halcyon.avif 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/240e7/halcyon.webp 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/faefe/halcyon.webp 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d5dc4/halcyon.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["VS Code","Sublime Text","Atom","iTerm2","Hyper"],"github":"https://github.com/bchiang7/halcyon-site","external":"https://halcyon-theme.netlify.com/"},"html":"<p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a href=\\"https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Visual Studio Marketplace</a>, <a href=\\"https://packagecontrol.io/packages/Halcyon%20Theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Package Control</a>, <a href=\\"https://atom.io/themes/halcyon-syntax\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Atom Package Manager</a>, and <a href=\\"https://www.npmjs.com/package/hyper-halcyon-theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">npm</a>.</p>"}},{"node":{"frontmatter":{"title":"Spotify Profile","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQoz32Q0U7bQBBF/RogjuOynpmdXW/W2E4cEwEhjgmymqpq+tg8tEWq2opf4hf6p5VjZJBjuE+r2b177h3HtQEKQMKOCOvxOb4nZ4gfMOhxngOUEX+NWCHAW+aTwSkRdZxANAHxb796+v35nkGQJOoze57fgxUi8Nxv5Wb/4xeTGo896MM7TAz4ckFEQoiiKL7sdutqu6k+fdxuq6oyxgRBt54zcr3OCABms9myWK2L1WKRXy+vy81dqMNjuOMemRGxhjABIisOCAQEcIQ9kEc95nqFAFEUZVkmpaSDeszucNSmPc7fDNtD56UzPHOllNNpMjuIiACAmefzubWWiOIkzrIsTdPGppTK8zwM6xU4g8GJ1ubqqkySxFrbfq+YASCJ401RXsQXYRi2jZRSzPzcmVlf5kuttZTydeyx79/eLB++/zTGWGujg5RSANCsoO5MRFpze9ESfH+8KtZ//j5OJqZJnqapMQYRG/J/k6JW26WIe1kAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png","srcSet":"/static/3936989a99991beb6d649d7a7039df60/cebcc/demo.png 175w,\\n/static/3936989a99991beb6d649d7a7039df60/272cf/demo.png 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/9aa63/demo.avif 175w,\\n/static/3936989a99991beb6d649d7a7039df60/e6db6/demo.avif 350w,\\n/static/3936989a99991beb6d649d7a7039df60/f47db/demo.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/240e7/demo.webp 175w,\\n/static/3936989a99991beb6d649d7a7039df60/faefe/demo.webp 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d5dc4/demo.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["React","Styled Components","Express","Spotify API","Heroku"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://spotify-profile.herokuapp.com/"},"html":"<p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>"}},{"node":{"frontmatter":{"title":"Build REST Countries API","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVQozx2QW2scBQCFxz6IIiqESFvsTiZ7353Zmb3Mde/JZrLJNrvB1G2yuZitIRc2yRpsFGO90It9EEVaotXQiEah0qZgraiUClqL5FkQpDUvEvFZ/AGfJAcOnKePc47g09IEzCJBs4g3lcObzOLTHHyaRbfmIMXTdKsOPtUmoNr4Yjbefas23XGbQDKHbPUgyibDY6cQJMUkJdskIxZ62ERTLETFwhNO4wvrhPwxfJEkRxSTDsVETOpIcZ0u2cDbZaBafSTyg3i1DLXRaYRwyKRdddi+GOXjN1RO5i1ET55nJZcJq8nDtVcYzddYeV2k+UmAQ4sphNUUIUvnZv0oQ2WXSKGKFM8wPNZE8HsUJqomtzf9fL5hUClmOZF02Z5ss7N4BtbfZ85tsLXRAf8+wrffd6Buhgmkk+y+/QQvlnMU7DJazKE62kS4fHmdaxfe5KerF2n15yhpBrrTy0pzjtnGNC/Up9Btl96KznI7y2rbotbQCRt5zj+/wGy1QXN4ipHKCK+9dQ7hn7//Yl9//LlHMHscMVlAUh2M8gnk3CA+vefg02DKxemfJmyPIMq9aOk+npuZp3jSoGcmzuDYNGtnziNsXfuOe7+ssH7rXQpuHX8iQyCRoVCpY5dqJHID+FQHxemlUK0TL5QJGAXUdInRyRnM/iy1hktPaZj20irCV9s/cOfnV/nw9iVieglPNEW3YiHJFl2KfdC2K2YRitko+2DNIbKfrSJTs0tofUP015fJOEO0my2EBw92Dybv7e4h2i2OyeMcHjSIbJrcv+HhTspPTUpR7ZR4R3iac48e5rTwFJlUnsnJccTjUQrjLdxMhfb8MsLvv33BpV8XOfv1R2jl9zganaOzbqDsmPCwk/9MkdaRJIeiHh4LPskzhoggPU7CyrMwMY44IFOaeolKeoCX55cQdu5+wMaVFBeunkV3FzgmDyDmbOSlPGunE6zaJlm/iVQrEF0oE55xCZ3qI2hm+OzTL/nm1l2uX99m68ZNfrx3n/8BIHar7OvmGqAAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png","srcSet":"/static/ee098d896ff86ef147b635b0a898b614/9a130/Untitled.png 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/a3fa1/Untitled.png 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/87926/Untitled.png 1400w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/dae43/Untitled.avif 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/d7667/Untitled.avif 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/7ec1a/Untitled.avif 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/71a30/Untitled.avif 1400w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/5d873/Untitled.webp 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/26a00/Untitled.webp 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/f23f0/Untitled.webp 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/2c2d0/Untitled.webp 1400w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":394}}},"tech":["React","React Router","React Icons","Styled Components","Axios"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://countries-info-de10hafbc-db-malik.vercel.app/"},"html":"<p>Challenge from Frontend Mentor. It\'is integrating with the REST Countries API to pull country data and display it like in the designs.</p>\\n<p>The users able to:</p>\\n<ul>\\n<li>See all countries from the API on the homepage</li>\\n<li>Search for a country using an input field</li>\\n<li>Filter countries by region</li>\\n<li>Click on a country to see more detailed information on a separate page</li>\\n<li>Toggle the color scheme between light and dark mode</li>\\n</ul>"}}]}}}');
 
 /***/ })
 

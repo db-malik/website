@@ -42,7 +42,7 @@ const StyledProject = styled.li`
   &:nth-of-type(odd) {
     .project-content {
       grid-column: 7 / -1;
-      text-align: right;
+      text-align: left;
 
       @media (max-width: 1080px) {
         grid-column: 5 / -1;
@@ -55,6 +55,10 @@ const StyledProject = styled.li`
       @media (max-width: 480px) {
         padding: 25px 25px 20px;
       }
+    }
+    .project-title,
+    .project-overline {
+      text-align: right;
     }
     .project-tech-list {
       justify-content: flex-end;
@@ -322,7 +326,6 @@ const Featured = () => {
               tech
               github
               external
-              cta
             }
             html
           }
@@ -382,17 +385,17 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
+                      {/* {cta && (
                         <a href={cta} aria-label="Course Link" className="cta">
                           Learn More
                         </a>
-                      )}
+                      )} */}
                       {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
                         </a>
                       )}
-                      {external && !cta && (
+                      {external && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
                         </a>
