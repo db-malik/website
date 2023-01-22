@@ -1,8 +1,7 @@
 ---
 date: '2015-06-01'
-title: 'Weapons Science and
-Technology Engineer'
-school: "ENSTA-Paris   &  Military Academy"
+title: 'Weapons Science  Engineer'
+school: 'ENSTA-Paris   &  Military Academy'
 location: 'Tunis, Tunisa'
 range: ' 2010 -  2015'
 url: 'https://www.ensta-paris.fr/'

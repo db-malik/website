@@ -68,7 +68,8 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
+    /* border-radius: var(--border-radius); */
     background-color: var(--green);
 
     &:hover,
@@ -83,10 +84,12 @@ const StyledPic = styled.div`
       .img {
         filter: none;
         mix-blend-mode: normal;
+        border-radius: 40px;
       }
     }
 
     .img {
+      /* border-radius: 30px; */
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
@@ -149,9 +152,8 @@ const About = () => {
             <p>
               Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating
               things that live on the internet. I'm passionate about UI effects, animations, and
-              developing dynamic, intuitive user interfaces. I've worked using different
-              technologies, both backend and frontend. I'm currently working using{' '}
-              <a href="https://www.javascript.com/">Javascript</a>,{' '}
+              developing dynamic, intuitive user interfaces. Experienced in different technologies,
+              both backend and frontend using <a href="https://www.javascript.com/">Javascript</a>,{' '}
               <a href="https://www.typescriptlang.org/">typescript</a>,{' '}
               <a href="https://www.php.net/">PHP</a>.
             </p>
@@ -164,15 +166,6 @@ const About = () => {
               Well-organized, problem-solver, and independent employee with great attention to
               detail. Fan of football, TV shows, and outdoor activities like traveling and camping.
             </p>
-
-            {/* <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p> */}
           </div>
         </StyledText>
 
@@ -180,7 +173,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/cvPhoto.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

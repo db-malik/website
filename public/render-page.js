@@ -8179,21 +8179,6 @@ const Footer = () => {
     stars: null,
     forks: null
   });
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    if (true) {
-      return;
-    }
-    fetch('https://api.github.com/repos/bchiang7/v4').then(response => response.json()).then(json => {
-      const {
-        stargazers_count,
-        forks_count
-      } = json;
-      setGitHubInfo({
-        stars: stargazers_count,
-        forks: forks_count
-      });
-    }).catch(e => console.error(e));
-  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledFooter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledSocialLinks, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, _config__WEBPACK_IMPORTED_MODULE_2__.socialMedia && _config__WEBPACK_IMPORTED_MODULE_2__.socialMedia.map(({
     name,
     url
@@ -8206,15 +8191,7 @@ const Footer = () => {
     name: name
   })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledCredit, {
     tabindex: "-1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://github.com/bchiang7/v4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Designed & Built by Brittany Chiang"), githubInfo.stars && githubInfo.forks && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "github-stats"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_icons__WEBPACK_IMPORTED_MODULE_1__.Icon, {
-    name: "Star"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, githubInfo.stars.toLocaleString())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_icons__WEBPACK_IMPORTED_MODULE_1__.Icon, {
-    name: "Fork"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, githubInfo.forks.toLocaleString()))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Malek Dbouba")));
 };
 Footer.propTypes = {
   githubInfo: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)
@@ -8807,9 +8784,9 @@ const IconLoader = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default
   viewBox: "0 0 100 100"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Loader Logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
   id: "B",
-  transform: "translate(11.000000, 5.000000)"
+  transform: "translate(25.000000, 35.000000)"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-  d: "M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z",
+  d: "M 27.792 25.488 L 24.552 25.488 L 24.552 0.288 L 29.34 0.288 L 36.324 16.236 L 43.2 0.288 L 48.096 0.288 L 48.096 25.488 L 44.676 25.488 L 44.676 4.644 L 37.944 19.8 L 34.56 19.8 L 27.792 4.644 L 27.792 25.488 Z M 0 25.416 L 0 0.36 Q 1.692 0.18 3.312 0.09 A 54.471 54.471 0 0 1 4.819 0.029 Q 5.589 0.007 6.442 0.002 A 92.38 92.38 0 0 1 7.02 0 A 17.499 17.499 0 0 1 9.664 0.19 Q 11.282 0.437 12.618 1.008 A 11.152 11.152 0 0 1 15.242 2.563 A 9.8 9.8 0 0 1 16.506 3.78 Q 18.036 5.544 18.774 7.866 A 15.932 15.932 0 0 1 19.484 11.825 A 18.542 18.542 0 0 1 19.512 12.852 Q 19.512 15.48 18.756 17.82 Q 18 20.16 16.434 21.942 A 10.429 10.429 0 0 1 13.462 24.264 A 12.692 12.692 0 0 1 12.438 24.75 Q 10.179 25.704 7.095 25.771 A 21.669 21.669 0 0 1 6.624 25.776 A 67.312 67.312 0 0 1 5.158 25.761 Q 3.998 25.736 3.042 25.668 Q 1.512 25.56 0 25.416 Z M 3.42 3.132 L 3.42 22.608 Q 4.176 22.716 5.004 22.752 A 38.615 38.615 0 0 0 6.287 22.786 A 43.66 43.66 0 0 0 6.732 22.788 Q 9.315 22.788 11.143 21.987 A 7.211 7.211 0 0 0 12.024 21.528 Q 14.076 20.268 15.048 18.018 A 11.625 11.625 0 0 0 15.86 15.111 A 15.301 15.301 0 0 0 16.02 12.852 Q 16.02 10.26 15.048 7.992 Q 14.076 5.724 12.06 4.338 A 7.522 7.522 0 0 0 9.521 3.237 Q 8.499 2.992 7.307 2.958 A 13.683 13.683 0 0 0 6.912 2.952 Q 5.868 2.952 5.004 3.006 Q 4.14 3.06 3.42 3.132 Z",
   fill: "currentColor"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
   stroke: "currentColor",
@@ -8839,23 +8816,20 @@ __webpack_require__.r(__webpack_exports__);
 const IconLogo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
   id: "logo",
   xmlns: "http://www.w3.org/2000/svg",
-  role: "img",
-  viewBox: "0 0 84 96"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
-  transform: "translate(-8.000000, -2.000000)"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
-  transform: "translate(11.000000, 5.000000)"
+  viewBox: "0 0 100 100"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Loader Logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
+  id: "B",
+  transform: "translate(25.000000, 35.000000)"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-  d: "M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z",
+  d: "M 27.792 25.488 L 24.552 25.488 L 24.552 0.288 L 29.34 0.288 L 36.324 16.236 L 43.2 0.288 L 48.096 0.288 L 48.096 25.488 L 44.676 25.488 L 44.676 4.644 L 37.944 19.8 L 34.56 19.8 L 27.792 4.644 L 27.792 25.488 Z M 0 25.416 L 0 0.36 Q 1.692 0.18 3.312 0.09 A 54.471 54.471 0 0 1 4.819 0.029 Q 5.589 0.007 6.442 0.002 A 92.38 92.38 0 0 1 7.02 0 A 17.499 17.499 0 0 1 9.664 0.19 Q 11.282 0.437 12.618 1.008 A 11.152 11.152 0 0 1 15.242 2.563 A 9.8 9.8 0 0 1 16.506 3.78 Q 18.036 5.544 18.774 7.866 A 15.932 15.932 0 0 1 19.484 11.825 A 18.542 18.542 0 0 1 19.512 12.852 Q 19.512 15.48 18.756 17.82 Q 18 20.16 16.434 21.942 A 10.429 10.429 0 0 1 13.462 24.264 A 12.692 12.692 0 0 1 12.438 24.75 Q 10.179 25.704 7.095 25.771 A 21.669 21.669 0 0 1 6.624 25.776 A 67.312 67.312 0 0 1 5.158 25.761 Q 3.998 25.736 3.042 25.668 Q 1.512 25.56 0 25.416 Z M 3.42 3.132 L 3.42 22.608 Q 4.176 22.716 5.004 22.752 A 38.615 38.615 0 0 0 6.287 22.786 A 43.66 43.66 0 0 0 6.732 22.788 Q 9.315 22.788 11.143 21.987 A 7.211 7.211 0 0 0 12.024 21.528 Q 14.076 20.268 15.048 18.018 A 11.625 11.625 0 0 0 15.86 15.111 A 15.301 15.301 0 0 0 16.02 12.852 Q 16.02 10.26 15.048 7.992 Q 14.076 5.724 12.06 4.338 A 7.522 7.522 0 0 0 9.521 3.237 Q 8.499 2.992 7.307 2.958 A 13.683 13.683 0 0 0 6.912 2.952 Q 5.868 2.952 5.004 3.006 Q 4.14 3.06 3.42 3.132 Z",
   fill: "currentColor"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("polygon", {
-  id: "Shape",
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
   stroke: "currentColor",
   strokeWidth: "5",
   strokeLinecap: "round",
   strokeLinejoin: "round",
-  points: "39 0 0 22 0 67 39 90 78 68 78 23"
-}))));
+  d: "M 50, 5 L 11, 27 L 11, 72 L 50, 95 L 89, 73 L 89, 28 z"
+})));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconLogo);
 
 /***/ }),
@@ -9532,7 +9506,7 @@ const StyledText = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div
 })([".skills{margin-top:50px;}.skills-content{display:flex;gap:3vw;flex-wrap:wrap;}ul.skills-list{display:flex;flex-direction:column;padding:0;margin:20px 0 0 0;overflow:hidden;list-style:none;li{position:relative;margin-bottom:10px;padding-left:20px;font-family:var(--font-mono);font-size:var(--fz-xs);&:before{content:'\u25B9';position:absolute;left:0;color:var(--green);font-size:var(--fz-sm);line-height:12px;}}}"]);
 const StyledPic = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "about__StyledPic"
-})(["position:relative;max-width:300px;@media (max-width:768px){margin:50px auto 0;width:70%;}.wrapper{", ";display:block;position:relative;width:100%;border-radius:var(--border-radius);background-color:var(--green);&:hover,&:focus{outline:0;&:after{top:15px;left:15px;}.img{filter:none;mix-blend-mode:normal;}}.img{position:relative;border-radius:var(--border-radius);mix-blend-mode:multiply;filter:grayscale(100%) contrast(1);transition:var(--transition);}&:before,&:after{content:'';display:block;position:absolute;width:100%;height:100%;border-radius:var(--border-radius);transition:var(--transition);}&:before{top:0;left:0;background-color:var(--navy);mix-blend-mode:screen;}&:after{border:2px solid var(--green);top:20px;left:20px;z-index:-1;}}"], ({
+})(["position:relative;max-width:300px;@media (max-width:768px){margin:50px auto 0;width:70%;}.wrapper{", ";display:block;position:relative;width:100%;border-radius:10px;background-color:var(--green);&:hover,&:focus{outline:0;&:after{top:15px;left:15px;}.img{filter:none;mix-blend-mode:normal;border-radius:40px;}}.img{position:relative;border-radius:var(--border-radius);mix-blend-mode:multiply;filter:grayscale(100%) contrast(1);transition:var(--transition);}&:before,&:after{content:'';display:block;position:absolute;width:100%;height:100%;border-radius:var(--border-radius);transition:var(--transition);}&:before{top:0;left:0;background-color:var(--navy);mix-blend-mode:screen;}&:after{border:2px solid var(--green);top:20px;left:20px;z-index:-1;}}"], ({
   theme
 }) => theme.mixins.boxShadow);
 const About = () => {
@@ -9556,7 +9530,7 @@ const About = () => {
     className: "numbered-heading"
   }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "inner"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating things that live on the internet. I'm passionate about UI effects, animations, and developing dynamic, intuitive user interfaces. I've worked using different technologies, both backend and frontend. I'm currently working using", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating things that live on the internet. I'm passionate about UI effects, animations, and developing dynamic, intuitive user interfaces. Experienced in different technologies, both backend and frontend using ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://www.javascript.com/"
   }, "Javascript"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://www.typescriptlang.org/"
@@ -9566,12 +9540,12 @@ const About = () => {
     className: "wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
     className: "img",
-    src: "../../images/me.jpg",
+    src: "../../images/cvPhoto.png",
     width: 500,
     quality: 95,
     formats: ['AUTO', 'WEBP', 'AVIF'],
     alt: "Headshot",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3648988202.json */ "./.cache/caches/gatsby-plugin-image/3648988202.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3372176726.json */ "./.cache/caches/gatsby-plugin-image/3372176726.json")
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "skills"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
@@ -9640,7 +9614,7 @@ const Contact = () => {
     className: "numbered-heading overline"
   }, "What\u2019s Next?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title"
-  }, "Get In Touch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Although I\u2019m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I\u2019ll try my best to get back to you!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Get In Touch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "My inbox is always open. Whether you have a new opportunities, question or just want to say hi, I\u2019ll try my best to get back to you!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "email-link",
     href: `mailto:${_config__WEBPACK_IMPORTED_MODULE_1__.email}`
   }, "Say Hello"));
@@ -9683,7 +9657,7 @@ const StyledJobsSection = styled_components__WEBPACK_IMPORTED_MODULE_6__["defaul
 })(["max-width:700px;.inner{display:flex;@media (max-width:600px){display:block;}@media (min-width:700px){min-height:340px;}}"]);
 const StyledTabList = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "education__StyledTabList"
-})(["position:relative;z-index:3;width:max-content;padding:0;margin:0;list-style:none;@media (max-width:600px){display:flex;overflow-x:auto;width:calc(100% + 100px);padding-left:50px;margin-left:-50px;margin-bottom:30px;}@media (max-width:480px){width:calc(100% + 50px);padding-left:25px;margin-left:-25px;}li{&:first-of-type{@media (max-width:600px){margin-left:50px;}@media (max-width:480px){margin-left:25px;}}&:last-of-type{@media (max-width:600px){padding-right:50px;}@media (max-width:480px){padding-right:25px;}}}"]);
+})(["position:relative;z-index:3;width:max-content;padding:0;margin:0;list-style:none;@media (max-width:600px){display:flex;flex-wrap:wrap;overflow-x:auto;width:calc(100% + 100px);padding-left:50px;margin-left:-50px;margin-bottom:30px;}@media (max-width:480px){width:calc(100% + 50px);padding-left:25px;margin-left:-25px;}li{&:first-of-type{@media (max-width:600px){margin-left:50px;}@media (max-width:480px){margin-left:25px;}}&:last-of-type{@media (max-width:600px){padding-right:50px;}@media (max-width:480px){padding-right:25px;}}}"]);
 const StyledTabButton = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].button.withConfig({
   displayName: "education__StyledTabButton"
 })(["", ";display:flex;align-items:center;width:100%;height:var(--tab-height);padding:0 20px 2px;border-left:2px solid var(--lightest-navy);background-color:transparent;color:", ";font-family:var(--font-mono);font-size:var(--fz-xs);text-align:left;white-space:nowrap;@media (max-width:768px){padding:0 15px 2px;}@media (max-width:600px){", ";min-width:120px;padding:0 15px;border-left:0;border-bottom:2px solid var(--lightest-navy);text-align:center;}&:hover,&:focus{background-color:var(--light-navy);}"], ({
@@ -10083,10 +10057,10 @@ const StyledJobsSection = styled_components__WEBPACK_IMPORTED_MODULE_6__["defaul
 })(["max-width:700px;.inner{display:flex;@media (max-width:600px){display:block;}@media (min-width:700px){min-height:340px;}}"]);
 const StyledTabList = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "jobs__StyledTabList"
-})(["position:relative;z-index:3;width:max-content;padding:0;margin:0;list-style:none;@media (max-width:600px){display:flex;overflow-x:auto;width:calc(100% + 100px);padding-left:50px;margin-left:-50px;margin-bottom:30px;}@media (max-width:480px){width:calc(100% + 50px);padding-left:25px;margin-left:-25px;}li{&:first-of-type{@media (max-width:600px){margin-left:50px;}@media (max-width:480px){margin-left:25px;}}&:last-of-type{@media (max-width:600px){padding-right:50px;}@media (max-width:480px){padding-right:25px;}}}"]);
+})(["position:relative;z-index:3;width:max-content;padding:0;margin:0;list-style:none;@media (max-width:600px){display:flex;flex-wrap:wrap;overflow-x:auto;width:calc(100% + 100px);padding-left:50px;margin-left:-50px;margin-bottom:30px;}@media (max-width:480px){width:calc(100% + 50px);padding-left:25px;margin-left:-25px;}li{&:first-of-type{@media (max-width:600px){margin-left:50px;}@media (max-width:480px){margin-left:25px;}}&:last-of-type{@media (max-width:600px){padding-right:50px;}@media (max-width:480px){padding-right:25px;}}}"]);
 const StyledTabButton = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].button.withConfig({
   displayName: "jobs__StyledTabButton"
-})(["", ";display:flex;align-items:center;width:100%;height:var(--tab-height);padding:0 20px 2px;border-left:2px solid var(--lightest-navy);background-color:transparent;color:", ";font-family:var(--font-mono);font-size:var(--fz-xs);text-align:left;white-space:nowrap;@media (max-width:768px){padding:0 15px 2px;}@media (max-width:600px){", ";min-width:120px;padding:0 15px;border-left:0;border-bottom:2px solid var(--lightest-navy);text-align:center;}&:hover,&:focus{background-color:var(--light-navy);}"], ({
+})(["", ";display:flex;align-items:center;width:100%;height:var(--tab-height);padding:0 20px 2px;border-left:2px solid var(--lightest-navy);background-color:transparent;color:", ";font-family:var(--font-mono);font-size:var(--fz-xs);text-align:left;white-space:nowrap;@media (max-width:768px){padding:0 15px 2px;}@media (max-width:600px){", ";min-width:100px;padding:0;margin-right:20px;border-left:0;border-bottom:2px solid var(--lightest-navy);text-align:center;}&:hover,&:focus{background-color:var(--light-navy);padding:0;}"], ({
   theme
 }) => theme.mixins.link, ({
   isActive
@@ -10127,7 +10101,7 @@ const Jobs = () => {
       return;
     }
     _utils_sr__WEBPACK_IMPORTED_MODULE_4__["default"].reveal(revealContainer.current, (0,_config__WEBPACK_IMPORTED_MODULE_2__.srConfig)());
-  }, []);
+  }, [prefersReducedMotion]);
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
       tabs.current[tabFocus].focus();
@@ -10144,7 +10118,7 @@ const Jobs = () => {
   };
 
   // Only re-run the effect if tabFocus changes
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => focusTab(), [tabFocus]);
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => focusTab(), [tabFocus, focusTab]);
 
   // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
@@ -10281,7 +10255,7 @@ const StyledProjectsSection = styled_components__WEBPACK_IMPORTED_MODULE_7__["de
 }) => theme.mixins.button);
 const StyledProject = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].li.withConfig({
   displayName: "projects__StyledProject"
-})(["position:relative;cursor:default;transition:var(--transition);@media (prefers-reduced-motion:no-preference){&:hover,&:focus-within{.project-inner{transform:translateY(-7px);}}}a{position:relative;z-index:1;}.project-inner{", ";", ";flex-direction:column;align-items:flex-start;position:relative;height:100%;padding:2rem 1.75rem;border-radius:var(--border-radius);background-color:var(--light-navy);transition:var(--transition);overflow:auto;}.project-top{", ";margin-bottom:35px;.folder{color:var(--green);svg{width:40px;height:40px;}}.project-links{display:flex;align-items:center;margin-right:-10px;color:var(--light-slate);a{", ";padding:5px 7px;&.external{svg{width:22px;height:22px;margin-top:-4px;}}svg{width:20px;height:20px;}}}}.project-title{margin:0 0 10px;color:var(--lightest-slate);font-size:var(--fz-xxl);a{position:static;&:before{content:'';display:block;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;}}}.project-description{color:var(--light-slate);font-size:17px;a{", ";}}.project-tech-list{display:flex;align-items:flex-end;flex-grow:1;flex-wrap:wrap;padding:0;margin:20px 0 0 0;list-style:none;li{font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:1.75;&:not(:last-of-type){margin-right:15px;}}}"], ({
+})(["position:relative;transition:var(--transition);@media (prefers-reduced-motion:no-preference){&:hover,&:focus-within{.project-inner{transform:translateY(-7px);}}}a{position:relative;z-index:1;}.project-inner{", ";", " flex-direction:column;align-items:flex-start;position:relative;height:100%;padding:2rem 1.75rem;border-radius:var(--border-radius);background-color:var(--light-navy);transition:var(--transition);overflow:auto;}.project-top{", ";margin-bottom:35px;margin-right:0;width:100%;.folder{color:var(--green);svg{width:40px;height:40px;}}.project-links{display:flex;align-items:center;margin-right:-10px;color:var(--light-slate);a{", ";padding:5px 7px;&.external{svg{width:22px;height:22px;margin-top:-4px;}}svg{width:20px;height:20px;}}}}.project-title{margin:0 0 10px;color:var(--lightest-slate);font-size:var(--fz-xxl);a{position:static;&:before{content:'';display:block;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;}}}.project-description{color:var(--light-slate);font-size:17px;a{", ";}}.project-tech-list{display:flex;align-items:flex-end;flex-grow:1;flex-wrap:wrap;padding:0;margin:20px 0 0 0;list-style:none;li{font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:1.75;&:not(:last-of-type){margin-right:15px;}}}"], ({
   theme
 }) => theme.mixins.boxShadow, ({
   theme
@@ -10297,7 +10271,7 @@ const Projects = () => {
   const {
     0: showMore,
     1: setShowMore
-  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const revealTitle = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
   const revealArchiveLink = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
   const revealProjects = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)([]);
@@ -10311,9 +10285,10 @@ const Projects = () => {
     revealProjects.current.forEach((ref, i) => _utils_sr__WEBPACK_IMPORTED_MODULE_4__["default"].reveal(ref, (0,_config__WEBPACK_IMPORTED_MODULE_3__.srConfig)(i * 100)));
   }, []);
   const GRID_LIMIT = 6;
-  const projects = data.projects.edges.filter(({
+  const allProjects = data.projects.edges.filter(({
     node
   }) => node);
+  const projects = allProjects.slice(0, 9);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
   const projectInner = node => {
@@ -10329,7 +10304,11 @@ const Projects = () => {
     } = frontmatter;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "project-inner"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("header", {
+      style: {
+        width: '100%'
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "project-top"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "folder"
@@ -10371,11 +10350,7 @@ const Projects = () => {
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(StyledProjectsSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
     ref: revealTitle
-  }, "Other Noteworthy Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    className: "inline-link archive-link",
-    to: "/archive",
-    ref: revealArchiveLink
-  }, "view the archive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
+  }, "Other Noteworthy Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
     className: "projects-grid"
   }, prefersReducedMotion ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, projectsToShow && projectsToShow.map(({
     node
@@ -10396,10 +10371,13 @@ const Projects = () => {
     style: {
       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`
     }
-  }, projectInner(node)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
-    className: "more-button",
-    onClick: () => setShowMore(!showMore)
-  }, "Show ", showMore ? 'Less' : 'More'));
+  }, projectInner(node)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: "inline-link archive-link",
+    to: "/archive",
+    ref: revealArchiveLink
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
+    className: "more-button"
+  }, "view all projects ")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
 
@@ -10530,22 +10508,16 @@ Social.propTypes = {
 /***/ ((module) => {
 
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'malek.dbouba@pm.me',
   socialMedia: [{
     name: 'GitHub',
-    url: 'https://github.com/bchiang7'
-  }, {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/bchiang7'
+    url: 'https://github.com/db-malik'
   }, {
     name: 'Twitter',
-    url: 'https://twitter.com/bchiang7'
+    url: 'https://twitter.com/MalekDbouba'
   }, {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/bchiang7'
-  }, {
-    name: 'Codepen',
-    url: 'https://codepen.io/bchiang7'
+    url: 'https://www.linkedin.com/in/malek-dbouba/'
   }],
   navLinks: [{
     name: 'About',
@@ -10553,6 +10525,9 @@ module.exports = {
   }, {
     name: 'Experience',
     url: '/#jobs'
+  }, {
+    name: 'Education',
+    url: '/#education'
   }, {
     name: 'Work',
     url: '/#projects'
@@ -50517,14 +50492,14 @@ function _setPrototypeOf(o, p) {
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3648988202.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3372176726.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3648988202.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3372176726.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#d8c8b8","images":{"fallback":{"src":"/static/c4375b86d69ac8114168905067a86175/d218e/me.png","srcSet":"/static/c4375b86d69ac8114168905067a86175/a84e3/me.png 125w,\\n/static/c4375b86d69ac8114168905067a86175/64938/me.png 250w,\\n/static/c4375b86d69ac8114168905067a86175/d218e/me.png 500w,\\n/static/c4375b86d69ac8114168905067a86175/fa8cd/me.png 1000w","sizes":"(min-width: 500px) 500px, 100vw"},"sources":[{"srcSet":"/static/c4375b86d69ac8114168905067a86175/aebc8/me.avif 125w,\\n/static/c4375b86d69ac8114168905067a86175/6b255/me.avif 250w,\\n/static/c4375b86d69ac8114168905067a86175/f9526/me.avif 500w,\\n/static/c4375b86d69ac8114168905067a86175/54f6b/me.avif 1000w","type":"image/avif","sizes":"(min-width: 500px) 500px, 100vw"},{"srcSet":"/static/c4375b86d69ac8114168905067a86175/4155f/me.webp 125w,\\n/static/c4375b86d69ac8114168905067a86175/02deb/me.webp 250w,\\n/static/c4375b86d69ac8114168905067a86175/1ee78/me.webp 500w,\\n/static/c4375b86d69ac8114168905067a86175/873fb/me.webp 1000w","type":"image/webp","sizes":"(min-width: 500px) 500px, 100vw"}]},"width":500,"height":500}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e8d8d8","images":{"fallback":{"src":"/static/b5355d2c0886c2c57ed6c52d4aecab87/d218e/cvPhoto.png","srcSet":"/static/b5355d2c0886c2c57ed6c52d4aecab87/a84e3/cvPhoto.png 125w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/64938/cvPhoto.png 250w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/d218e/cvPhoto.png 500w","sizes":"(min-width: 500px) 500px, 100vw"},"sources":[{"srcSet":"/static/b5355d2c0886c2c57ed6c52d4aecab87/aebc8/cvPhoto.avif 125w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/6b255/cvPhoto.avif 250w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/f9526/cvPhoto.avif 500w","type":"image/avif","sizes":"(min-width: 500px) 500px, 100vw"},{"srcSet":"/static/b5355d2c0886c2c57ed6c52d4aecab87/4155f/cvPhoto.webp 125w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/02deb/cvPhoto.webp 250w,\\n/static/b5355d2c0886c2c57ed6c52d4aecab87/1ee78/cvPhoto.webp 500w","type":"image/webp","sizes":"(min-width: 500px) 500px, 100vw"}]},"width":500,"height":500}');
 
 /***/ }),
 
@@ -50557,7 +50532,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"defaultTitle":"Br
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Developer","company":"Ministry of National Defense","location":"Tunis, Tunisia","range":"June 2020 - Present","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Write modern code; ensure quality and maintenance through different\\ntesting practices: unit, integration, functional.</li>\\n<li>Developed and integrated new features and improved the user\\nexperience UX of a university educational platform.</li>\\n<li>Developed the main front-end features of a WMS using ReactJS.</li>\\n<li>Interfaced with clients on a weekly basis, providing technological expertise.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"IT Manager","company":"Military Academy","location":"Tunis, Tunisa","range":"September 2017 - May 2020","url":"http://www.emat.defense.tn/"},"html":"<ul>\\n<li>Control the IT infrastructure policy.</li>\\n<li>Web integrator: Taught more than 120 engineering students HTML,\\nCSS and JavaScript by making more than 20 mock-ups.</li>\\n<li>Troubleshot systems, diagnosing and resolving hardware or software\\nfaults.</li>\\n<li>Supported the roll-out of new applications</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Engineer Officer","company":"Ministry of National Defense","location":"Tunis, Tunisa","range":"July 2015 - August 2017","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Led more than 100-person combat unit to ensure operational readiness\\nincluding training programs, human resource management and\\nplanning.</li>\\n<li>Tested, repaired and maintained the weapons functionalities.</li>\\n</ul>"}}]}}}');
+module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Developer","company":"Ministry of National Defense","location":"Tunis, Tunisia","range":"June 2020 - Present","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Develop the front-end functionality of an inventory management system for the\\nmilitary bases.</li>\\n<li>Improve the e-learning platform for military academies for better UX/UI.</li>\\n<li>Developed the main front-end features of a WMS using ReactJS.</li>\\n<li>Participated in the development of an application to control entry and exit using facial recognition technologies.</li>\\n<li>Interfaced with clients on a weekly basis, providing technological expertise.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"IT technical support ","company":"Military Academy","location":"Tunis, Tunisa","range":"September 2017 - May 2020","url":"http://www.emat.defense.tn/"},"html":"<ul>\\n<li>Control the IT infrastructure policy.</li>\\n<li>Web integrator: Taught more than 120 engineering students HTML,\\nCSS and JavaScript by making more than 20 mock-ups.</li>\\n<li>Troubleshot systems, diagnosing and resolving hardware or software\\nfaults.</li>\\n<li>Supported the roll-out of new applications</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Engineer Officer","company":"Ministry of National Defense","location":"Tunis, Tunisa","range":"July 2015 - August 2017","url":"https://www.defense.tn/?lang=fr"},"html":"<ul>\\n<li>Led more than 100-person combat unit to ensure operational readiness\\nincluding training programs, human resource management and\\nplanning.</li>\\n<li>Tested, repaired and maintained the weapons functionalities.</li>\\n</ul>"}}]}}}');
 
 /***/ }),
 
@@ -50568,7 +50543,7 @@ module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"projects":{"edges":[{"node":{"frontmatter":{"title":"E-Commerce website page","tech":["React","react-router","styled-components","slick-carousel"],"github":"https://github.com/db-malik/react-front-ecommerce","external":"https://react-front-ecommerce-7yncg4vlu-db-malik.vercel.app/"},"html":"<p>React Single page E-Commerce App Design</p>"}},{"node":{"frontmatter":{"title":"Animated Slider","tech":["HTML","CSS","JavaScript"],"github":"https://github.com/db-malik/slider-images/tree/main/src","external":"https://slider-images.vercel.app/"},"html":"<p>Building a custom slider component and text effect</p>"}},{"node":{"frontmatter":{"title":"Product Card","tech":["HTML5","CSS3","JavaScript"],"github":"https://github.com/db-malik/product-card-details","external":"https://product-card-details.vercel.app/"},"html":"<p>Card product include animation and product detail and validation button</p>"}},{"node":{"frontmatter":{"title":"Building a Headless Mobile App CMS From Scratch","tech":["Node","Express","Firebase","Vue"],"github":"","external":"https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9"},"html":"<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement</p>"}},{"node":{"frontmatter":{"title":"Transparent Login Form","tech":["HTML","CSS"],"github":"https://github.com/db-malik/transparent-login-form","external":"https://transparent-login-form-pearl.vercel.app/"},"html":"<p>Styled Form with transparet background</p>"}},{"node":{"frontmatter":{"title":"Personal Website V3","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/bchiang7.github.io","external":"https://bchiang7.github.io/v3/"},"html":"<p>Third iteration of my personal website built with Jekyll and hosted on GitHub Pages.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V2","tech":["Jekyll","SCSS","JS"],"github":"https://github.com/bchiang7/v2","external":"https://bchiang7.github.io/v2/"},"html":"<p>Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.</p>"}},{"node":{"frontmatter":{"title":"Screentime 2.0","tech":["Cordova","Backbone","Marionette"],"github":"","external":"https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents"},"html":"<p>Starry Station android app feature that provided users with the ability to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their phones.</p>"}},{"node":{"frontmatter":{"title":"React Profile","tech":["React","CSS"],"github":"https://github.com/bchiang7/react-profile","external":"https://bchiang7.github.io/react-profile/"},"html":"<p>Online version of my 2016 resume made for fun. I was interested in learning React.js, so I found a simple tutorial and it spun into a weekend project.</p>"}},{"node":{"frontmatter":{"title":"Personal Website V1","tech":["HTML","CSS","JS","Bootstrap"],"github":"https://github.com/bchiang7/v1","external":"https://bchiang7.github.io/v1/"},"html":"<p>My first portfolio website I designed and built in 2014. I learned quite a bit about HTML, CSS, and SEO. Since then, I think my web development and design skills have improved immensely.</p>"}},{"node":{"frontmatter":{"title":"Fontipsums","tech":["HTML","SCSS"],"github":"https://github.com/bchiang7/fontipsums/","external":"http://bchiang7.github.io/fontipsums/"},"html":"<p>Simple website to display some of my favorite font pairings combined with some fun lorem ipsum variations found on the web.</p>"}},{"node":{"frontmatter":{"title":"NU Women in Tech","tech":["Jekyll","Bootstrap"],"github":"https://github.com/nuwit/website","external":"https://nuwit.ccs.neu.edu/"},"html":"<p>Complete overhaul and redesign of NU Women in Tech’s club website using Jekyll, built while serving as web chair on the e-board.</p>"}}]}}}');
+module.exports = JSON.parse('{"data":{"projects":{"edges":[{"node":{"frontmatter":{"title":"Credit Card ","tech":["HTML5","CSS3","JavaScript"],"github":"https://github.com/db-malik/credit-card","external":"https://credit-card-dl32-4qpssrnr2-db-malik.vercel.app/"},"html":"<p>A nicer look at Credit Card interact with user input</p>"}},{"node":{"frontmatter":{"title":"E-Commerce website page","tech":["React","react-router","styled-components","slick-carousel"],"github":"https://github.com/db-malik/react-front-ecommerce","external":"https://react-front-ecommerce-7yncg4vlu-db-malik.vercel.app/"},"html":"<p>React Single page E-Commerce App Design</p>"}},{"node":{"frontmatter":{"title":"Transparent Login Form","tech":["HTML","CSS"],"github":"https://github.com/db-malik/transparent-login-form","external":"https://transparent-login-form-pearl.vercel.app/"},"html":"<p>Styled Form with transparet background</p>"}},{"node":{"frontmatter":{"title":"Animated Slider","tech":["HTML","CSS","JavaScript"],"github":"https://github.com/db-malik/slider-images/tree/main/src","external":"https://slider-images.vercel.app/"},"html":"<p>Building a custom slider component and text effect</p>"}},{"node":{"frontmatter":{"title":"Product Card","tech":["HTML5","CSS3","JavaScript"],"github":"https://github.com/db-malik/product-card-details","external":"https://product-card-details.vercel.app/"},"html":"<p>Card product include animation and product detail and validation button</p>"}},{"node":{"frontmatter":{"title":"hover-card-effect","tech":["HTML5","CSS3","JavaScript"],"github":"https://github.com/db-malik/hover-card-effect","external":"https://hover-card-effect.vercel.app/"},"html":"<p>Animated Card show detail on hover</p>"}},{"node":{"frontmatter":{"title":"Borel Coffee Clone","tech":["React","SASS","React Router"],"github":"https://github.com/db-malik/boreal-cofee","external":"https://boreal-cofee.vercel.app/"},"html":"<p>Clone <a href=\\"https://www.borealcoffee.ch/?sl=en\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Borel Coffe website</a></p>"}},{"node":{"frontmatter":{"title":"CourseSource","tech":["Angular","Node","Express","MongoDB"],"github":"https://github.com/bchiang7/WebDevSpring2016/tree/master/public/project","external":""},"html":"<p>Web application built on the MEAN (MongoDB, Express, Angular, Node) stack with the intention of providing Northeastern students a better experience browsing the courses offered at Northeastern.</p>"}}]}}}');
 
 /***/ }),
 
@@ -50579,7 +50554,7 @@ module.exports = JSON.parse('{"data":{"projects":{"edges":[{"node":{"frontmatter
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Engineering","school":"Superior School of Technology and Management SUPTECH","location":"Tunis, Tunisa","range":" 2017 -  2020","url":"https://suptech.tn/"},"html":"<ul>\\n<li>Clean code writing: Maintaining and understanding code easily.</li>\\n<li>Testing and debugging: Finding and resolving issues in code.</li>\\n<li>Computer science concepts: Understanding data structures, algorithms, and design patterns.</li>\\n<li>Proficiency in programming languages and tools: Efficient use of programming languages and tools.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Science and Technology Engineer","school":"ENSTA-Paris   &  Military Academy","location":"Tunis, Tunisa","range":" 2010 -  2015","url":"https://www.ensta-paris.fr/"},"html":"<ul>\\n<li>Weapon design and development: Creating and improving weapons systems.</li>\\n<li>Ballistic and aerodynamic analysis: Understanding the physics of projectiles and flight.</li>\\n<li>Materials and manufacturing: Knowledge of materials properties and manufacturing techniques.</li>\\n<li>Testing and evaluation: Assessing weapon performance and safety.</li>\\n</ul>"}}]}}}');
+module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"title":"Software Engineering","school":"Superior School of Technology and Management SUPTECH","location":"Tunis, Tunisa","range":" 2017 -  2020","url":"https://suptech.tn/"},"html":"<ul>\\n<li>Clean code writing: Maintaining and understanding code easily.</li>\\n<li>Testing and debugging: Finding and resolving issues in code.</li>\\n<li>Computer science concepts: Understanding data structures, algorithms, and design patterns.</li>\\n<li>Proficiency in programming languages and tools: Efficient use of programming languages and tools.</li>\\n</ul>"}},{"node":{"frontmatter":{"title":"Weapons Science  Engineer","school":"ENSTA-Paris   &  Military Academy","location":"Tunis, Tunisa","range":" 2010 -  2015","url":"https://www.ensta-paris.fr/"},"html":"<ul>\\n<li>Weapon design and development: Creating and improving weapons systems.</li>\\n<li>Ballistic and aerodynamic analysis: Understanding the physics of projectiles and flight.</li>\\n<li>Materials and manufacturing: Knowledge of materials properties and manufacturing techniques.</li>\\n<li>Testing and evaluation: Assessing weapon performance and safety.</li>\\n</ul>"}}]}}}');
 
 /***/ }),
 
@@ -50590,7 +50565,7 @@ module.exports = JSON.parse('{"data":{"jobs":{"edges":[{"node":{"frontmatter":{"
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"featured":{"edges":[{"node":{"frontmatter":{"title":"Halcyon Theme","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png","srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/cebcc/halcyon.png 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/272cf/halcyon.png 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d2194/halcyon.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/9aa63/halcyon.avif 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/e6db6/halcyon.avif 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/240e7/halcyon.webp 175w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/faefe/halcyon.webp 350w,\\n/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/d5dc4/halcyon.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["VS Code","Sublime Text","Atom","iTerm2","Hyper"],"github":"https://github.com/bchiang7/halcyon-site","external":"https://halcyon-theme.netlify.com/"},"html":"<p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a href=\\"https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Visual Studio Marketplace</a>, <a href=\\"https://packagecontrol.io/packages/Halcyon%20Theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Package Control</a>, <a href=\\"https://atom.io/themes/halcyon-syntax\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Atom Package Manager</a>, and <a href=\\"https://www.npmjs.com/package/hyper-halcyon-theme\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">npm</a>.</p>"}},{"node":{"frontmatter":{"title":"Spotify Profile","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQoz32Q0U7bQBBF/RogjuOynpmdXW/W2E4cEwEhjgmymqpq+tg8tEWq2opf4hf6p5VjZJBjuE+r2b177h3HtQEKQMKOCOvxOb4nZ4gfMOhxngOUEX+NWCHAW+aTwSkRdZxANAHxb796+v35nkGQJOoze57fgxUi8Nxv5Wb/4xeTGo896MM7TAz4ckFEQoiiKL7sdutqu6k+fdxuq6oyxgRBt54zcr3OCABms9myWK2L1WKRXy+vy81dqMNjuOMemRGxhjABIisOCAQEcIQ9kEc95nqFAFEUZVkmpaSDeszucNSmPc7fDNtD56UzPHOllNNpMjuIiACAmefzubWWiOIkzrIsTdPGppTK8zwM6xU4g8GJ1ubqqkySxFrbfq+YASCJ401RXsQXYRi2jZRSzPzcmVlf5kuttZTydeyx79/eLB++/zTGWGujg5RSANCsoO5MRFpze9ESfH+8KtZ//j5OJqZJnqapMQYRG/J/k6JW26WIe1kAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png","srcSet":"/static/3936989a99991beb6d649d7a7039df60/cebcc/demo.png 175w,\\n/static/3936989a99991beb6d649d7a7039df60/272cf/demo.png 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d2194/demo.png 700w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/9aa63/demo.avif 175w,\\n/static/3936989a99991beb6d649d7a7039df60/e6db6/demo.avif 350w,\\n/static/3936989a99991beb6d649d7a7039df60/f47db/demo.avif 700w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/3936989a99991beb6d649d7a7039df60/240e7/demo.webp 175w,\\n/static/3936989a99991beb6d649d7a7039df60/faefe/demo.webp 350w,\\n/static/3936989a99991beb6d649d7a7039df60/d5dc4/demo.webp 700w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":438}}},"tech":["React","Styled Components","Express","Spotify API","Heroku"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://spotify-profile.herokuapp.com/"},"html":"<p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>"}},{"node":{"frontmatter":{"title":"Build REST Countries API","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVQozx2QW2scBQCFxz6IIiqESFvsTiZ7353Zmb3Mde/JZrLJNrvB1G2yuZitIRc2yRpsFGO90It9EEVaotXQiEah0qZgraiUClqL5FkQpDUvEvFZ/AGfJAcOnKePc47g09IEzCJBs4g3lcObzOLTHHyaRbfmIMXTdKsOPtUmoNr4Yjbefas23XGbQDKHbPUgyibDY6cQJMUkJdskIxZ62ERTLETFwhNO4wvrhPwxfJEkRxSTDsVETOpIcZ0u2cDbZaBafSTyg3i1DLXRaYRwyKRdddi+GOXjN1RO5i1ET55nJZcJq8nDtVcYzddYeV2k+UmAQ4sphNUUIUvnZv0oQ2WXSKGKFM8wPNZE8HsUJqomtzf9fL5hUClmOZF02Z5ss7N4BtbfZ85tsLXRAf8+wrffd6Buhgmkk+y+/QQvlnMU7DJazKE62kS4fHmdaxfe5KerF2n15yhpBrrTy0pzjtnGNC/Up9Btl96KznI7y2rbotbQCRt5zj+/wGy1QXN4ipHKCK+9dQ7hn7//Yl9//LlHMHscMVlAUh2M8gnk3CA+vefg02DKxemfJmyPIMq9aOk+npuZp3jSoGcmzuDYNGtnziNsXfuOe7+ssH7rXQpuHX8iQyCRoVCpY5dqJHID+FQHxemlUK0TL5QJGAXUdInRyRnM/iy1hktPaZj20irCV9s/cOfnV/nw9iVieglPNEW3YiHJFl2KfdC2K2YRitko+2DNIbKfrSJTs0tofUP015fJOEO0my2EBw92Dybv7e4h2i2OyeMcHjSIbJrcv+HhTspPTUpR7ZR4R3iac48e5rTwFJlUnsnJccTjUQrjLdxMhfb8MsLvv33BpV8XOfv1R2jl9zganaOzbqDsmPCwk/9MkdaRJIeiHh4LPskzhoggPU7CyrMwMY44IFOaeolKeoCX55cQdu5+wMaVFBeunkV3FzgmDyDmbOSlPGunE6zaJlm/iVQrEF0oE55xCZ3qI2hm+OzTL/nm1l2uX99m68ZNfrx3n/8BIHar7OvmGqAAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png","srcSet":"/static/ee098d896ff86ef147b635b0a898b614/9a130/Untitled.png 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/a3fa1/Untitled.png 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/87926/Untitled.png 1400w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/dae43/Untitled.avif 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/d7667/Untitled.avif 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/7ec1a/Untitled.avif 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/71a30/Untitled.avif 1400w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/5d873/Untitled.webp 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/26a00/Untitled.webp 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/f23f0/Untitled.webp 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/2c2d0/Untitled.webp 1400w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":394}}},"tech":["React","React Router","React Icons","Styled Components","Axios"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://countries-info-de10hafbc-db-malik.vercel.app/"},"html":"<p>Challenge from Frontend Mentor. It\'is integrating with the REST Countries API to pull country data and display it like in the designs.</p>\\n<p>The users able to:</p>\\n<ul>\\n<li>See all countries from the API on the homepage</li>\\n<li>Search for a country using an input field</li>\\n<li>Filter countries by region</li>\\n<li>Click on a country to see more detailed information on a separate page</li>\\n<li>Toggle the color scheme between light and dark mode</li>\\n</ul>"}}]}}}');
+module.exports = JSON.parse('{"data":{"featured":{"edges":[{"node":{"frontmatter":{"title":"Build REST Countries API","cover":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVQozx2QW2scBQCFxz6IIiqESFvsTiZ7353Zmb3Mde/JZrLJNrvB1G2yuZitIRc2yRpsFGO90It9EEVaotXQiEah0qZgraiUClqL5FkQpDUvEvFZ/AGfJAcOnKePc47g09IEzCJBs4g3lcObzOLTHHyaRbfmIMXTdKsOPtUmoNr4Yjbefas23XGbQDKHbPUgyibDY6cQJMUkJdskIxZ62ERTLETFwhNO4wvrhPwxfJEkRxSTDsVETOpIcZ0u2cDbZaBafSTyg3i1DLXRaYRwyKRdddi+GOXjN1RO5i1ET55nJZcJq8nDtVcYzddYeV2k+UmAQ4sphNUUIUvnZv0oQ2WXSKGKFM8wPNZE8HsUJqomtzf9fL5hUClmOZF02Z5ss7N4BtbfZ85tsLXRAf8+wrffd6Buhgmkk+y+/QQvlnMU7DJazKE62kS4fHmdaxfe5KerF2n15yhpBrrTy0pzjtnGNC/Up9Btl96KznI7y2rbotbQCRt5zj+/wGy1QXN4ipHKCK+9dQ7hn7//Yl9//LlHMHscMVlAUh2M8gnk3CA+vefg02DKxemfJmyPIMq9aOk+npuZp3jSoGcmzuDYNGtnziNsXfuOe7+ssH7rXQpuHX8iQyCRoVCpY5dqJHID+FQHxemlUK0TL5QJGAXUdInRyRnM/iy1hktPaZj20irCV9s/cOfnV/nw9iVieglPNEW3YiHJFl2KfdC2K2YRitko+2DNIbKfrSJTs0tofUP015fJOEO0my2EBw92Dybv7e4h2i2OyeMcHjSIbJrcv+HhTspPTUpR7ZR4R3iac48e5rTwFJlUnsnJccTjUQrjLdxMhfb8MsLvv33BpV8XOfv1R2jl9zganaOzbqDsmPCwk/9MkdaRJIeiHh4LPskzhoggPU7CyrMwMY44IFOaeolKeoCX55cQdu5+wMaVFBeunkV3FzgmDyDmbOSlPGunE6zaJlm/iVQrEF0oE55xCZ3qI2hm+OzTL/nm1l2uX99m68ZNfrx3n/8BIHar7OvmGqAAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png","srcSet":"/static/ee098d896ff86ef147b635b0a898b614/9a130/Untitled.png 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/a3fa1/Untitled.png 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/bc3b9/Untitled.png 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/87926/Untitled.png 1400w","sizes":"(min-width: 700px) 700px, 100vw"},"sources":[{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/dae43/Untitled.avif 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/d7667/Untitled.avif 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/7ec1a/Untitled.avif 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/71a30/Untitled.avif 1400w","type":"image/avif","sizes":"(min-width: 700px) 700px, 100vw"},{"srcSet":"/static/ee098d896ff86ef147b635b0a898b614/5d873/Untitled.webp 175w,\\n/static/ee098d896ff86ef147b635b0a898b614/26a00/Untitled.webp 350w,\\n/static/ee098d896ff86ef147b635b0a898b614/f23f0/Untitled.webp 700w,\\n/static/ee098d896ff86ef147b635b0a898b614/2c2d0/Untitled.webp 1400w","type":"image/webp","sizes":"(min-width: 700px) 700px, 100vw"}]},"width":700,"height":394}}},"tech":["React","React Router","React Icons","Styled Components","Axios"],"github":"https://github.com/bchiang7/spotify-profile","external":"https://countries-info-de10hafbc-db-malik.vercel.app/"},"html":"<p>Challenge from Frontend Mentor. It\'is integrating with the REST Countries API to pull country data and display it like in the designs.</p>\\n<p>The users able to:</p>\\n<ul>\\n<li>See all countries from the API on the homepage</li>\\n<li>Search for a country using an input field</li>\\n<li>Filter countries by region</li>\\n<li>Click on a country to see more detailed information on a separate page</li>\\n<li>Toggle the color scheme between light and dark mode</li>\\n</ul>"}}]}}}');
 
 /***/ })
 

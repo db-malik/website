@@ -7,9 +7,9 @@ range: 'June 2020 - Present'
 url: 'https://www.defense.tn/?lang=fr'
 ---
 
-- Write modern code; ensure quality and maintenance through different
-  testing practices: unit, integration, functional.
-- Developed and integrated new features and improved the user
-  experience UX of a university educational platform.
+- Develop the front-end functionality of an inventory management system for the
+  military bases.
+- Improve the e-learning platform for military academies for better UX/UI.
 - Developed the main front-end features of a WMS using ReactJS.
+- Participated in the development of an application to control entry and exit using facial recognition technologies.
 - Interfaced with clients on a weekly basis, providing technological expertise.

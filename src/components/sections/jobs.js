@@ -34,6 +34,7 @@ const StyledTabList = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
+    flex-wrap: wrap;
     overflow-x: auto;
     width: calc(100% + 100px);
     padding-left: 50px;
@@ -69,6 +70,7 @@ const StyledTabList = styled.div`
 const StyledTabButton = styled.button`
   ${({ theme }) => theme.mixins.link};
   display: flex;
+  /* margin: 0 20px; */
   align-items: center;
   width: 100%;
   height: var(--tab-height);
@@ -86,8 +88,9 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
-    padding: 0 15px;
+    min-width: 100px;
+    padding: 0;
+    margin-right: 20px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
@@ -96,6 +99,7 @@ const StyledTabButton = styled.button`
   &:hover,
   &:focus {
     background-color: var(--light-navy);
+    padding: 0;
   }
 `;
 
@@ -201,7 +205,7 @@ const Jobs = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -219,7 +223,7 @@ const Jobs = () => {
   };
 
   // Only re-run the effect if tabFocus changes
-  useEffect(() => focusTab(), [tabFocus]);
+  useEffect(() => focusTab(), [tabFocus, focusTab]);
 
   // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {

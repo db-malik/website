@@ -1,6 +1,6 @@
 ---
 date: '2020-09-01'
-title: 'IT Manager'
+title: 'IT technical support '
 company: 'Military Academy'
 location: 'Tunis, Tunisa'
 range: 'September 2017 - May 2020'
