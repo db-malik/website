@@ -45,7 +45,7 @@ const StyledProjectsSection = styled.section`
 
 const StyledProject = styled.li`
   position: relative;
-  cursor: default;
+  /* cursor: default; */
   transition: var(--transition);
 
   @media (prefers-reduced-motion: no-preference) {
@@ -64,11 +64,12 @@ const StyledProject = styled.li`
 
   .project-inner {
     ${({ theme }) => theme.mixins.boxShadow};
-    ${({ theme }) => theme.mixins.flexBetween};
+    ${({ theme }) => theme.mixins.flexBetween}
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     height: 100%;
+
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
@@ -79,7 +80,8 @@ const StyledProject = styled.li`
   .project-top {
     ${({ theme }) => theme.mixins.flexBetween};
     margin-bottom: 35px;
-
+    margin-right: 0;
+    width: 100%;
     .folder {
       color: var(--green);
       svg {
@@ -190,7 +192,7 @@ const Projects = () => {
     }
   `);
 
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(true);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
@@ -207,7 +209,8 @@ const Projects = () => {
   }, []);
 
   const GRID_LIMIT = 6;
-  const projects = data.projects.edges.filter(({ node }) => node);
+  const allProjects = data.projects.edges.filter(({ node }) => node);
+  const projects = allProjects.slice(0, 9);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 
@@ -217,7 +220,7 @@ const Projects = () => {
 
     return (
       <div className="project-inner">
-        <header>
+        <header style={{ width: '100%' }}>
           <div className="project-top">
             <div className="folder">
               <Icon name="Folder" />
@@ -267,10 +270,6 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
-
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
@@ -302,9 +301,9 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+        <button className="more-button">view all projects </button>
+      </Link>
     </StyledProjectsSection>
   );
 };

@@ -19,10 +19,18 @@ const StyledAboutSection = styled.section`
   }
 `;
 const StyledText = styled.div`
+  .skills {
+    margin-top: 50px;
+  }
+  .skills-content {
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+  }
+
   ul.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -60,7 +68,8 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
+    /* border-radius: var(--border-radius); */
     background-color: var(--green);
 
     &:hover,
@@ -75,10 +84,12 @@ const StyledPic = styled.div`
       .img {
         filter: none;
         mix-blend-mode: normal;
+        border-radius: 40px;
       }
     }
 
     .img {
+      /* border-radius: 30px; */
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
@@ -125,7 +136,11 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = {
+    framework: ['React', 'Next.js', 'Node.js', 'Express.js', 'Bootstrap', 'MaterialUI'],
+    language: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'SQL'],
+    outil: ['PHP', 'Laravel', 'MySQL', 'MongoDB', 'Docker', 'Git/GitHub'],
+  };
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,45 +150,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating
+              things that live on the internet. I'm passionate about UI effects, animations, and
+              developing dynamic, intuitive user interfaces. Experienced in different technologies,
+              both backend and frontend using <a href="https://www.javascript.com/">Javascript</a>,{' '}
+              <a href="https://www.typescriptlang.org/">typescript</a>,{' '}
+              <a href="https://www.php.net/">PHP</a>.
+            </p>
+            <p>
+              My goal is to build highly performant applications that solve real-world problems and
+              provide users with an awesome experience.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Well-organized, problem-solver, and independent employee with great attention to
+              detail. Fan of football, TV shows, and outdoor activities like traveling and camping.
             </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/cvPhoto.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -182,6 +182,23 @@ const About = () => {
           </div>
         </StyledPic>
       </div>
+      <StyledText>
+        <div className="skills">
+          <h3 className="skills-title">Skills</h3>
+          <div className="skills-content">
+            <ul className="skills-list">
+              {skills && skills.framework.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
+
+            <ul className="skills-list">
+              {skills && skills.language.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
+            <ul className="skills-list">
+              {skills && skills.outil.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
+          </div>
+        </div>
+      </StyledText>
     </StyledAboutSection>
   );
 };

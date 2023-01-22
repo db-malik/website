@@ -1,8 +1,7 @@
 export const DATA = {
-  landin: {
+  landing: {
     name: "Hey, I'm Malek",
-    subtext: 'Developer  based in Tunisia',
-    jobStatus: 'Software Engineer  @ Ministry of National Defense',
+    jobStatus: 'Software Engineer based in Tunisia',
     twitterURL: 'https://twitter.com/MalekDbouba',
     blogURL: 'https://twitter.com/bchiang7',
     instaURL: 'https://www.instagram.com/bchiang7/',
@@ -14,7 +13,7 @@ export const DATA = {
   introduction: {
     title: 'introduction',
     content:
-      'Hello! My name is Malek and I am a software developer With 3 years of experience. I`m passionate about creating innovative and intuitive solutions. I have had the chance to work on various projects. In my previous role as a military officer, I developed strong problem-solving skills and a dedication to teamwork, which have proven invaluable in my tech career. I always look for new challenges and opportunities to grow as a developer and make a positive impact through my work.',
+      'Hello! My name is Malek.  Software engineer experienced in  web development. Proficient in modern technologies such as React, NodeJs. Experience in teamwork and project management. Problem solving and effective communication skills. Ability to learn new technologies quickly and adapt to change.',
   },
   // ------------------------------
   //          SKILLS
@@ -25,23 +24,23 @@ export const DATA = {
       {
         id: 1,
         title: 'languages',
-        content: 'JavaScript, Typescript, HTML5, CSS3, PHP, SQL',
+        content: 'JavaScript (ES6), TypeScript,  HTML, CSS/SCSS, PHP, SQL',
       },
       {
         id: 2,
         title: 'Libraries & Frameworks',
         content:
-          'React, Expressjs, Nextjs, Nodejs, jQuery, Bootstrap, MaterialUI, Laravel, React Testing, Jest',
+          'React, Next.js, Redux, Redux-Toolkit, React-router, jQuery, Express.js, Bootstrap, Node.js, Laravel, Material UI, Jest,',
       },
       {
         id: 3,
         title: 'Databases',
-        content: 'MySQL, MongoDB',
+        content: 'MySQL, PostgreSQL, MongoDB, Redis',
       },
       {
-        id: 3,
+        id: 4,
         title: 'Tools',
-        content: 'Git & Github, Gitkraken, Jira, Docker, Postman',
+        content: 'Git & Github, Gitkraken, Jira, Docker, Postman, Storybook',
       },
     ],
   },
@@ -56,7 +55,7 @@ export const DATA = {
       bachlor: 'Engineer degree, Software Engineering',
       university: 'University of Technology and Management- SUPTECH',
       link: 'https://suptech.tn/',
-      date: 'September 2017 - July 2020',
+      date: '2017 - 2020',
       location: 'Tunis, Tunisia',
       content: 'content...............',
     },
@@ -65,8 +64,10 @@ export const DATA = {
       id: 1,
       bachlor: 'Engineers degree,  Science and Technologies of Weapons',
       university: 'Tunisia Military Academy',
+      university2: 'Unité de Mécanique ENSTA-Paris',
       link: 'http://www.emat.defense.tn/index.php/en',
-      date: 'September 2012 – July 2015',
+      link2: 'https://www.ensta-paris.fr/',
+      date: '2012 – 2015',
       location: 'Tunis, Tunisia',
       content: 'content...............',
     },
@@ -75,8 +76,8 @@ export const DATA = {
       bachlor: 'Physical Chemistry Preparatory cycle',
       university: 'Preparatory Institute for Engineering Studies',
       link: 'http://www.emat.defense.tn/index.php/en',
-      date: 'September 2010 - June 2012',
-      location: 'Sousse, Tunisia',
+      date: '2010 - 2012',
+      location: 'Tunis, Tunisia',
       content: 'content...............',
     },
   ],
@@ -90,30 +91,37 @@ export const DATA = {
       id: 1,
       title: 'Software developer',
       society: 'Ministry of National Defense',
-      date: 'September 2020 - current | Tunis, Tunisia',
-      first: 'Developing new functionalities proposed by the superior officers.',
-      second: '',
-      third: '',
+      date: 'June 2020 - current | Tunis, Tunisia',
+      tasks: [
+        'Developing new functionalities to solve military problems.',
+        'Develop an inventory management system for military bases.',
+        'Using MaterialUI to enhance an e-learning platform for a better UX/UI.',
+        'Participated in the development of an application to control entry and exit using facial recognition technologies.',
+        'Integrate PDF/Excel data export functionality for an internal platform platform that increased user productivity by 25%.',
+        'Integrate drag and drop functionality into an internal platform',
+      ],
     },
 
     {
       id: 2,
-      title: 'IT Technical Support Officer',
+      title: 'IT technical support / temporary teacher',
       society: 'Tunisian Military Academy',
-      date: 'September 2017 - August 2020 | Tunis, Tunisia',
-      first: 'Control the IT infrastructure policy regarding the reorganization of the Army.',
-      second: 'Troubleshot systems, diagnosing and solving hardware or software faults.',
-      third: 'Supported the roll-out of new applications.',
+      date: 'September 2017 - May 2020 | Tunis, Tunisia',
+      tasks: [
+        'Controls the IT infrastructure policy.',
+        'Web Integrator Teacher ; achievements over 20 website mock-ups',
+        'Troubleshot systems, diagnose and resolve hardware or software failures',
+      ],
     },
     {
       id: 3,
       title: 'Weapon Engineering Officer',
       society: 'Tunisian Army',
       date: 'July 2015 - August 2017 | Tunis, Tunisia',
-      first:
-        'Led a more than 100-person combat unit to ensure operational readiness, including training programs, human resources management, and planning.',
-      second: 'Maintenance, Repair and Testing weapons functionalities.',
-      third: 'Experience working with US, Spanish and British special forces units.',
+      tasks: [
+        'Lead units of 100+ people to ensure operational readiness including training programs, human resource management and planning',
+        'Test the operation, repair and maintain the weapons.',
+      ],
     },
     {
       id: 4,
@@ -121,14 +129,18 @@ export const DATA = {
       society: 'Tunisian Company for Petroleum Activities  (ETAP)',
       link: 'http://www.etap.com.tn/',
       date: 'February 2020 - July 2020 | Tunis, Tunisia',
+      tasks: [
+        'Developed a human resources management application using the PHP Laravel framework, MySQL for database management and Bootstrap, JavaScript for user interaction and dynamic features.',
+      ],
       content: 'content...............',
     },
     {
       id: 5,
       title: 'Mechanical Engineering Intern',
-      society: 'The Mechanical Engineering Department (UME), ENSTA Paris Laboratories ',
+      society: 'The Mechanical Engineering Department (UME), ENSTA Paris',
       link: 'https://www.ensta-paris.fr/',
       date: 'March 2015 – July 2015 | Paris, France',
+      tasks: [],
       content: 'content...............',
     },
   ],
@@ -139,7 +151,7 @@ export const DATA = {
 
   project: [
     {
-      id: '1',
+      id: 1,
       title: 'Course Platform',
       descrption: 'Educational website for searching and visualizing e-books.',
       periode: '',
@@ -149,7 +161,7 @@ export const DATA = {
       githubURL: '',
     },
     {
-      id: '2',
+      id: 2,
       title: 'Ecommerce Web',
       descrption:
         'Responsive Full Stack Ecommerce application with Payments functionality. With, animations, the ability to add and edit products using a CMS.',
@@ -160,7 +172,7 @@ export const DATA = {
       githubURL: 'https://github.com/db-malik/Ecommerce',
     },
     {
-      id: '3',
+      id: 3,
       title: 'Social Media',
       descrption:
         'Developed a social app that helps users to post images, stories and keep connected to friends Added featured like: switch between dark/light modes, show and update user profile',
@@ -172,7 +184,7 @@ export const DATA = {
     },
 
     {
-      id: '4',
+      id: 4,
       title: 'REST Countries API with color theme switcher',
       descrption:
         'Challenge from frontend mentor. Integrating  the REST Countries API to pull country data and display it like in the designs. Allow user to see all countries from the API on the homepage, Search for a country using an input field, Filter countries by region, Click on a country to see more detailed information on a separate page, Toggle the color scheme between light and dark mode.         ',

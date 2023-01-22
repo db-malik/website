@@ -70,7 +70,6 @@ const StyledTabList = styled.div`
 const StyledTabButton = styled.button`
   ${({ theme }) => theme.mixins.link};
   display: flex;
-  /* margin: 0 20px; */
   align-items: center;
   width: 100%;
   height: var(--tab-height);
@@ -88,9 +87,8 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 100px;
-    padding: 0;
-    margin-right: 20px;
+    min-width: 120px;
+    padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
@@ -99,7 +97,6 @@ const StyledTabButton = styled.button`
   &:hover,
   &:focus {
     background-color: var(--light-navy);
-    padding: 0;
   }
 `;
 
@@ -168,18 +165,18 @@ const StyledTabPanel = styled.div`
   }
 `;
 
-const Jobs = () => {
+const Education = () => {
   const data = useStaticQuery(graphql`
     query {
       jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
+        filter: { fileAbsolutePath: { regex: "/content/education/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
             frontmatter {
               title
-              company
+              school
               location
               range
               url
@@ -205,7 +202,7 @@ const Jobs = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, [prefersReducedMotion]);
+  }, []);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -223,7 +220,7 @@ const Jobs = () => {
   };
 
   // Only re-run the effect if tabFocus changes
-  useEffect(() => focusTab(), [tabFocus, focusTab]);
+  useEffect(() => focusTab(), [tabFocus]);
 
   // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
@@ -248,8 +245,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Experience</h2>
-
+      <h2 className="numbered-heading">Education</h2>
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
@@ -277,7 +273,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, school, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -293,7 +289,7 @@ const Jobs = () => {
                       <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
-                          {company}
+                          {school}
                         </a>
                       </span>
                     </h3>
@@ -311,4 +307,4 @@ const Jobs = () => {
   );
 };
 
-export default Jobs;
+export default Education;
