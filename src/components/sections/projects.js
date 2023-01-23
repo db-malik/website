@@ -206,7 +206,7 @@ const Projects = () => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+  }, [prefersReducedMotion]);
 
   const GRID_LIMIT = 6;
   const allProjects = data.projects.edges.filter(({ node }) => node);
@@ -268,7 +268,7 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Other Projects</h2>
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
