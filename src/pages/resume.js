@@ -47,7 +47,7 @@ const ResumeContainer = styled.div`
 
   .left .bg-img {
     /* background: url('./images/1.png') no-repeat; */
-    background: url('./images/meBg1.png');
+    background: url('../images/meBg1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
