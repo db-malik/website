@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+// import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
 import { socialMedia } from '@config';
@@ -68,10 +68,10 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
+  // const [githubInfo, setGitHubInfo] = useState({
+  //   stars: null,
+  //   forks: null,
+  // });
 
   return (
     <StyledFooter>
@@ -95,8 +95,8 @@ const Footer = () => {
   );
 };
 
-Footer.propTypes = {
-  githubInfo: PropTypes.object,
-};
+// Footer.propTypes = {
+//   githubInfo: PropTypes.object,
+// };
 
 export default Footer;

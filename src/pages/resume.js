@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaGithub, FaBlogger } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
@@ -48,7 +48,7 @@ const ResumeContainer = styled.div`
   .left .bg-img {
     /* background: url('./images/1.png') no-repeat; */
     background: url('./images/meBg1.png');
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -270,7 +270,7 @@ const ResumeContainer = styled.div`
   }
 
   .educationItem .date-location {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   /* ------------- experience    --------------- */
@@ -285,7 +285,7 @@ const ResumeContainer = styled.div`
   }
 
   .experience .jobDate {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .workList {
     font-size: 0.9rem;
