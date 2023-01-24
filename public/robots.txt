@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://dbouba.com/sitemap-index.xml
+Host: https://dbouba.com
