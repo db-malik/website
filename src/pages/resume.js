@@ -4,6 +4,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
+import { Helmet } from 'react-helmet';
 
 import { DATA } from '../data/resumeData';
 const { landing, introduction, experience, skills, education } = DATA;
@@ -322,6 +323,7 @@ const ResumeContainer = styled.div`
 
 const resume = ({ location }) => (
   <ThemeProvider theme={theme}>
+    <Helmet title="Resume" />
     <GlobalStyle />
     <ResumeContainer className="container">
       <div className="left">

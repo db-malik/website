@@ -1,9 +1,9 @@
 ---
-date: '2022-04-06'
+date: '2022-01-10'
 title: 'Software Developer'
 company: 'Ministry of National Defense'
 location: 'Tunis, Tunisia'
-range: 'June 2020 - Present'
+range: 'January 2020 - Present'
 url: 'https://www.defense.tn/?lang=fr'
 ---
 

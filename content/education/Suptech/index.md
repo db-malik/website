@@ -1,10 +1,10 @@
 ---
-date: '2020-07-01'
+date: '2019-07-01'
 title: 'Software Engineering'
 school: 'Superior School of Technology
 and Management SUPTECH'
 location: 'Tunis, Tunisa'
-range: ' 2017 -  2020'
+range: ' 2017 -  2019'
 url: 'https://suptech.tn/'
 ---
 

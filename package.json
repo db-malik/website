@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "v1",
+  "description": "Personal Website V1",
   "version": "1.0.0",
   "author": "Malek Dbouba <malek@dbouba.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/db-malik"
   },
   "keywords": [
     "gatsby"
