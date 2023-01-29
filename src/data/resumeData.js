@@ -3,11 +3,11 @@ export const DATA = {
     name: "Hey, I'm Malek",
     jobStatus: 'Software Engineer based in Tunisia',
     twitterURL: 'https://twitter.com/MalekDbouba',
-    blogURL: 'https://twitter.com/bchiang7',
-    instaURL: 'https://www.instagram.com/bchiang7/',
+    blogURL: '',
+    instaURL: '',
     githubURL: 'https://github.com/db-malik',
     linkedinURL: 'https://www.linkedin.com/in/malek-dbouba/',
-    resumeURL: 'http://brittanychiang.com/resume.pdf',
+    resumeURL: '',
   },
 
   introduction: {
@@ -24,7 +24,7 @@ export const DATA = {
       {
         id: 1,
         title: 'languages',
-        content: 'JavaScript (ES6), TypeScript,  HTML, CSS/SCSS, PHP, SQL',
+        content: 'JavaScript (ES6), TypeScript,  HTML5, CSS3, PHP, SQL',
       },
       {
         id: 2,
@@ -40,7 +40,7 @@ export const DATA = {
       {
         id: 4,
         title: 'Tools',
-        content: 'Git & Github, Gitkraken, Jira, Docker, Postman, Storybook',
+        content: 'Git & Github, Gitkraken, Jira, Docker, Postman',
       },
     ],
   },
@@ -55,7 +55,7 @@ export const DATA = {
       bachlor: 'Engineer degree, Software Engineering',
       university: 'University of Technology and Management- SUPTECH',
       link: 'https://suptech.tn/',
-      date: '2017 - 2020',
+      date: '2017 - 2019',
       location: 'Tunis, Tunisia',
       content: 'content...............',
     },
@@ -63,7 +63,7 @@ export const DATA = {
     {
       id: 1,
       bachlor: 'Engineers degree,  Science and Technologies of Weapons',
-      university: 'Tunisia Military Academy',
+      university: 'Tunisia Military Academy ',
       university2: 'Unité de Mécanique ENSTA-Paris',
       link: 'http://www.emat.defense.tn/index.php/en',
       link2: 'https://www.ensta-paris.fr/',
@@ -91,14 +91,12 @@ export const DATA = {
       id: 1,
       title: 'Software developer',
       society: 'Ministry of National Defense',
-      date: 'June 2020 - current | Tunis, Tunisia',
+      date: 'January 2020 - current | Tunis, Tunisia',
       tasks: [
         'Developing new functionalities to solve military problems.',
         'Develop an inventory management system for military bases.',
         'Using MaterialUI to enhance an e-learning platform for a better UX/UI.',
-        'Participated in the development of an application to control entry and exit using facial recognition technologies.',
         'Integrate PDF/Excel data export functionality for an internal platform platform that increased user productivity by 25%.',
-        'Integrate drag and drop functionality into an internal platform',
       ],
     },
 
@@ -106,10 +104,10 @@ export const DATA = {
       id: 2,
       title: 'IT technical support / temporary teacher',
       society: 'Tunisian Military Academy',
-      date: 'September 2017 - May 2020 | Tunis, Tunisia',
+      date: 'September 2017 - December 2019 | Tunis, Tunisia',
       tasks: [
         'Controls the IT infrastructure policy.',
-        'Web Integrator Teacher ; achievements over 20 website mock-ups',
+        'Teach more than 120 engineering students HTML, CSS and JavaScript by creating more than 20 mock-ups.',
         'Troubleshot systems, diagnose and resolve hardware or software failures',
       ],
     },
@@ -128,7 +126,7 @@ export const DATA = {
       title: 'Software Engineering Intern',
       society: 'Tunisian Company for Petroleum Activities  (ETAP)',
       link: 'http://www.etap.com.tn/',
-      date: 'February 2020 - July 2020 | Tunis, Tunisia',
+      date: 'Januray 2019 - June 2019 | Tunis, Tunisia',
       tasks: [
         'Developed a human resources management application using the PHP Laravel framework, MySQL for database management and Bootstrap, JavaScript for user interaction and dynamic features.',
       ],

@@ -202,7 +202,7 @@ const Education = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -244,7 +244,7 @@ const Education = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
+    <StyledJobsSection id="education" ref={revealContainer}>
       <h2 className="numbered-heading">Education</h2>
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>

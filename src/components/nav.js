@@ -188,11 +188,13 @@ const Nav = ({ isHome }) => {
             <StyledLinks>
               <ol>
                 {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
+                  navLinks.map(({ url, name }, i) => {
+                    return (
+                      <li key={i}>
+                        <Link to={url}>{name}</Link>
+                      </li>
+                    );
+                  })}
               </ol>
               <div>{ResumeLink}</div>
             </StyledLinks>
