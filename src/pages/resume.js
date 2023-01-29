@@ -427,9 +427,13 @@ const resume = ({ location }) => (
                   </a>
 
                   {item.university2 ? (
-                    <a href={item.link2} target="blanc">
-                      {item.university2}
-                    </a>
+                    <span>
+                      {' '}
+                      /{' '}
+                      <a href={item.link2} target="blanc">
+                        {item.university2}
+                      </a>
+                    </span>
                   ) : null}
                 </div>
               ))}
