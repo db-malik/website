@@ -24,18 +24,18 @@ export const DATA = {
       {
         id: 1,
         title: 'languages',
-        content: 'JavaScript (ES6), TypeScript,  HTML5, CSS3, PHP, SQL',
+        content: 'JavaScript, TypeScript, HTML5, CSS3, PHP, SQL',
       },
       {
         id: 2,
         title: 'Libraries & Frameworks',
         content:
-          'React, Next.js, Redux, Redux-Toolkit, React-router, jQuery, Express.js, Bootstrap, Node.js, Laravel, Material UI, Jest,',
+          'React, Next.js, Redux, Redux-Toolkit, React-router, jQuery, Express.js, Bootstrap, Node.js, Vuejs, Laravel, Material UI, Jest, React-testing,',
       },
       {
         id: 3,
         title: 'Databases',
-        content: 'MySQL, PostgreSQL, MongoDB, Redis',
+        content: 'MySQL, MongoDB',
       },
       {
         id: 4,
@@ -55,7 +55,7 @@ export const DATA = {
       bachlor: 'Engineer degree, Software Engineering',
       university: 'University of Technology and Management- SUPTECH',
       link: 'https://suptech.tn/',
-      date: '2017 - 2019',
+      date: '2016 - 2019',
       location: 'Tunis, Tunisia',
       content: 'content...............',
     },
@@ -64,11 +64,11 @@ export const DATA = {
       id: 1,
       bachlor: 'Engineers degree,  Science and Technologies of Weapons',
       university: 'Tunisia Military Academy ',
-      university2: 'Unité de Mécanique ENSTA-Paris',
+      university2: 'Mechanical Unit ENSTA-Paris',
       link: 'http://www.emat.defense.tn/index.php/en',
       link2: 'https://www.ensta-paris.fr/',
       date: '2012 – 2015',
-      location: 'Tunis, Tunisia',
+      location: 'Tunis / Paris',
       content: 'content...............',
     },
     {
@@ -93,6 +93,7 @@ export const DATA = {
       society: 'Ministry of National Defense',
       date: 'January 2020 - current | Tunis, Tunisia',
       tasks: [
+        'Development of modules and requested interfaces with Reactjs',
         'Developing new functionalities to solve military problems.',
         'Develop an inventory management system for military bases.',
         'Using MaterialUI to enhance an e-learning platform for a better UX/UI.',
@@ -102,12 +103,12 @@ export const DATA = {
 
     {
       id: 2,
-      title: 'IT technical support / temporary teacher',
+      title: 'IT technical support',
       society: 'Tunisian Military Academy',
       date: 'September 2017 - December 2019 | Tunis, Tunisia',
       tasks: [
-        'Controls the IT infrastructure policy.',
-        'Teach more than 120 engineering students HTML, CSS and JavaScript by creating more than 20 mock-ups.',
+        'Controls the IT infrastructure policy',
+        'Supported the roll-out of new applications',
         'Troubleshot systems, diagnose and resolve hardware or software failures',
       ],
     },
@@ -128,7 +129,7 @@ export const DATA = {
       link: 'http://www.etap.com.tn/',
       date: 'Januray 2019 - June 2019 | Tunis, Tunisia',
       tasks: [
-        'Developed a human resources management application using the PHP Laravel framework, MySQL for database management and Bootstrap, JavaScript for user interaction and dynamic features.',
+        'Design and development of a human resources management application (front-end VueJs, back-end Laravel, database MySQL)',
       ],
       content: 'content...............',
     },
@@ -138,7 +139,9 @@ export const DATA = {
       society: 'The Mechanical Engineering Department (UME), ENSTA Paris',
       link: 'https://www.ensta-paris.fr/',
       date: 'March 2015 – July 2015 | Paris, France',
-      tasks: [],
+      tasks: [
+        'Study of the thermomechanical behavior of shape memory alloys by identifying their functional characteristics.',
+      ],
       content: 'content...............',
     },
   ],
@@ -147,52 +150,52 @@ export const DATA = {
   //          PROJECTS
   // ------------------------------
 
-  project: [
-    {
-      id: 1,
-      title: 'Course Platform',
-      descrption: 'Educational website for searching and visualizing e-books.',
-      periode: '',
-      framework: 'React.js | Strapi CMS | MongoDB',
-      tools: 'Expres.js, Material UI, Redux-toolkit, styled Component',
-      link: '',
-      githubURL: '',
-    },
-    {
-      id: 2,
-      title: 'Ecommerce Web',
-      descrption:
-        'Responsive Full Stack Ecommerce application with Payments functionality. With, animations, the ability to add and edit products using a CMS.',
-      periode: '',
-      framework: 'React.js, Strapi CMS, MongoDB',
-      tools: 'Strapi CMS, Stripe, Bootstrap, Redux, Mongoose',
-      link: '',
-      githubURL: 'https://github.com/db-malik/Ecommerce',
-    },
-    {
-      id: 3,
-      title: 'Social Media',
-      descrption:
-        'Developed a social app that helps users to post images, stories and keep connected to friends Added featured like: switch between dark/light modes, show and update user profile',
-      periode: '',
-      framework: 'React.js, Express.js, MySQL',
-      tools: 'Sass, Redux, Context, Sequelize',
-      link: '',
-      githubURL: 'https://github.com/db-malik/social-media',
-    },
+  // project: [
+  //   {
+  //     id: 1,
+  //     title: 'Course Platform',
+  //     descrption: 'Educational website for searching and visualizing e-books.',
+  //     periode: '',
+  //     framework: 'React.js | Strapi CMS | MongoDB',
+  //     tools: 'Expres.js, Material UI, Redux-toolkit, styled Component',
+  //     link: '',
+  //     githubURL: '',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Ecommerce Web',
+  //     descrption:
+  //       'Responsive Full Stack Ecommerce application with Payments functionality. With, animations, the ability to add and edit products using a CMS.',
+  //     periode: '',
+  //     framework: 'React.js, Strapi CMS, MongoDB',
+  //     tools: 'Strapi CMS, Stripe, Bootstrap, Redux, Mongoose',
+  //     link: '',
+  //     githubURL: 'https://github.com/db-malik/Ecommerce',
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Social Media',
+  //     descrption:
+  //       'Developed a social app that helps users to post images, stories and keep connected to friends Added featured like: switch between dark/light modes, show and update user profile',
+  //     periode: '',
+  //     framework: 'React.js, Express.js, MySQL',
+  //     tools: 'Sass, Redux, Context, Sequelize',
+  //     link: '',
+  //     githubURL: 'https://github.com/db-malik/social-media',
+  //   },
 
-    {
-      id: 4,
-      title: 'REST Countries API with color theme switcher',
-      descrption:
-        'Challenge from frontend mentor. Integrating  the REST Countries API to pull country data and display it like in the designs. Allow user to see all countries from the API on the homepage, Search for a country using an input field, Filter countries by region, Click on a country to see more detailed information on a separate page, Toggle the color scheme between light and dark mode.         ',
-      periode: '',
-      framework: 'React.js',
-      tools: 'Axios, Styled-components, React-icons.',
-      link: 'https://countries-info-de10hafbc-db-malik.vercel.app/',
-      sourceLink:
-        'https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca',
-      githubURL: 'https://github.com/db-malik/countries-info-api',
-    },
-  ],
+  //   {
+  //     id: 4,
+  //     title: 'REST Countries API with color theme switcher',
+  //     descrption:
+  //       'Challenge from frontend mentor. Integrating  the REST Countries API to pull country data and display it like in the designs. Allow user to see all countries from the API on the homepage, Search for a country using an input field, Filter countries by region, Click on a country to see more detailed information on a separate page, Toggle the color scheme between light and dark mode.         ',
+  //     periode: '',
+  //     framework: 'React.js',
+  //     tools: 'Axios, Styled-components, React-icons.',
+  //     link: 'https://countries-info-de10hafbc-db-malik.vercel.app/',
+  //     sourceLink:
+  //       'https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca',
+  //     githubURL: 'https://github.com/db-malik/countries-info-api',
+  //   },
+  // ],
 };
