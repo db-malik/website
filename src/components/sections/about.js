@@ -138,7 +138,7 @@ const About = () => {
 
   const skills = {
     framework: ['React', 'Next.js', 'Node.js', 'Express.js', 'Bootstrap', 'MaterialUI'],
-    language: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'SQL'],
+    language: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Vuejs', 'SQL'],
     outil: ['PHP', 'Laravel', 'MySQL', 'MongoDB', 'Docker', 'Git/GitHub'],
   };
 
