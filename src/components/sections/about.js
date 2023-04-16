@@ -139,7 +139,7 @@ const About = () => {
   const skills = {
     framework: ['React', 'Next.js', 'Node.js', 'Express.js', 'Bootstrap', 'MaterialUI'],
     language: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Vuejs', 'SQL'],
-    outil: ['PHP', 'Laravel', 'MySQL', 'MongoDB', 'Docker', 'Git/GitHub'],
+    outil: ['PHP', 'Laravel', 'MySQL', 'Jest', 'Git/GitHub', 'Agile Scrum'],
   };
 
   return (
@@ -150,12 +150,12 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Malek. I am a Software Engineer based in Tunisia. I enjoy creating
+              Hello! My name is Malek Software Engineer proficent in React, Nextjs I enjoy creating
               things that live on the internet. I'm passionate about UI effects, animations, and
               developing dynamic, intuitive user interfaces. Experienced in different technologies,
               both backend and frontend using <a href="https://www.javascript.com/">Javascript</a>,{' '}
               <a href="https://www.typescriptlang.org/">typescript</a>,{' '}
-              <a href="https://www.php.net/">PHP</a>.
+              <a href="https://nodejs.org/en">Nodejs</a>.
             </p>
             <p>
               My goal is to build highly performant applications that solve real-world problems and
@@ -164,7 +164,7 @@ const About = () => {
 
             <p>
               Well-organized, problem-solver, and independent employee with great attention to
-              detail. Fan of football, TV shows, and outdoor activities like traveling and camping.
+              detail. Fan of football, TV shows, and camping.
             </p>
           </div>
         </StyledText>

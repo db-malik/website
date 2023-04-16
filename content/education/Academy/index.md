@@ -1,10 +1,10 @@
 ---
-date: '2015-06-01'
+date: '2012-06-01'
 title: 'Weapons Science  Engineer'
-school: 'ENSTA-Paris   &  Military Academy'
+school: 'Military Academy'
 location: 'Tunis, Tunisa'
-range: ' 2010 -  2015'
-url: 'https://www.ensta-paris.fr/'
+range: ' 2012 -  2015'
+url: 'http://www.emat.defense.tn/index.php/fr/formation-des-officiers-fr/presentation-am-fr'
 ---
 
 - Weapon design and development: Creating and improving weapons systems.
