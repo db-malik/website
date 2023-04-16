@@ -7,9 +7,8 @@ range: 'September 2017 - December 2019'
 url: 'http://www.emat.defense.tn/'
 ---
 
-- Control the IT infrastructure policy.
-- Web integrator: Taught more than 120 engineering students HTML,
-  CSS and JavaScript by making more than 20 mock-ups.
+- Monitored IT infrastructure policy, ensuring that military IT systems operate securely and efficiently.
+- Participated in regular briefings with senior officers and provided technical advice and recommendations on IT issues.
 - Troubleshot systems, diagnosing and resolving hardware or software
   faults.
 - Supported the roll-out of new applications

@@ -30,17 +30,13 @@ export const DATA = {
         id: 2,
         title: 'Libraries & Frameworks',
         content:
-          'React, Next.js, Redux, Redux-Toolkit, React-router, jQuery, Express.js, Bootstrap, Node.js, Vuejs, Laravel, Material UI, Jest, React-testing,',
+          'React, Next.js, Redux, jQuery, Express.js, Bootstrap, Node.js, Vuejs, Laravel, Material UI, Jest, React-testing,',
       },
-      {
-        id: 3,
-        title: 'Databases',
-        content: 'MySQL, MongoDB',
-      },
+
       {
         id: 4,
         title: 'Tools',
-        content: 'Git & Github, Gitkraken, Jira, Docker, Postman',
+        content: 'Git & Github, Slack, Jira, Docker, Postman',
       },
     ],
   },
@@ -93,11 +89,9 @@ export const DATA = {
       society: 'Ministry of National Defense',
       date: 'January 2020 - current | Tunis, Tunisia',
       tasks: [
-        'Development of modules and requested interfaces with Reactjs',
-        'Developing new functionalities to solve military problems.',
-        'Develop an inventory management system for military bases.',
-        'Using MaterialUI to enhance an e-learning platform for a better UX/UI.',
-        'Integrate PDF/Excel data export functionality for an internal platform platform that increased user productivity by 25%.',
+        'Conducted unit tests to maintain code quality and identify and fix issues, improving platform stability and reducing maintenance costs.',
+        'Using MaterialUI to enhance an onligne education platform for a better UX/UI.',
+        'Developed reusable React components and modules to streamline development and improve code maintainability.',
       ],
     },
 

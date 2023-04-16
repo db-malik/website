@@ -8,7 +8,7 @@ tech:
   - SASS
   - React Router
 company: ''
-showInProjects: true
+showInProjects: false
 ---
 
 Clone [Borel Coffe website](https://www.borealcoffee.ch/?sl=en)
