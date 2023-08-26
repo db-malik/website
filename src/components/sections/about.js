@@ -137,9 +137,9 @@ const About = () => {
   }, []);
 
   const skills = {
-    framework: ['React', 'Next.js', 'Node.js', 'Express.js', 'Bootstrap', 'MaterialUI'],
-    language: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Vuejs', 'SQL'],
-    outil: ['PHP', 'Laravel', 'MySQL', 'Jest', 'Git/GitHub', 'Agile Scrum'],
+    framework: ['React', 'Next.js', 'Node.js', 'Bootstrap', 'MaterialUI'],
+    language: ['JavaScript', 'TypeScript','Python', 'HTML5/CSS3','SQL'],
+    outil: [ 'MySQL', 'Jest', 'Git','GitLab', 'Jira'],
   };
 
   return (
@@ -150,12 +150,12 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Malek Software Engineer proficent in React, Nextjs I enjoy creating
+              Hello! My name is Malek Software Engineer proficient in React, Next.js I enjoy creating
               things that live on the internet. I'm passionate about UI effects, animations, and
               developing dynamic, intuitive user interfaces. Experienced in different technologies,
               both backend and frontend using <a href="https://www.javascript.com/">Javascript</a>,{' '}
-              <a href="https://www.typescriptlang.org/">typescript</a>,{' '}
-              <a href="https://nodejs.org/en">Nodejs</a>.
+              <a href="https://www.typescriptlang.org/">Typescript</a>,{' '}
+              <a href="https://nodejs.org/en">Python</a>.
             </p>
             <p>
               My goal is to build highly performant applications that solve real-world problems and
@@ -174,8 +174,8 @@ const About = () => {
             <StaticImage
               className="img"
               src="../../images/cvPhoto.png"
-              width={500}
-              quality={95}
+              width={400}
+              quality={100}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
             />

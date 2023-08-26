@@ -24,19 +24,19 @@ export const DATA = {
       {
         id: 1,
         title: 'languages',
-        content: 'JavaScript, TypeScript, HTML5, CSS3, PHP, SQL',
+        content: 'JavaScript, TypeScript,Python, HTML5, CSS3, SQL',
       },
       {
         id: 2,
         title: 'Libraries & Frameworks',
         content:
-          'React, Next.js, Redux, jQuery, Express.js, Bootstrap, Node.js, Vuejs, Laravel, Material UI, Jest, React-testing,',
+          'React, Next.js, Redux, jQuery, Express.js, Bootstrap, Node.js, Material-UI, Jest, React-testing,',
       },
 
       {
         id: 4,
         title: 'Tools',
-        content: 'Git & Github, Slack, Jira, Docker, Postman',
+        content: 'Git , Github, Gitlab , Slack, Jira, Docker, Postman',
       },
     ],
   },

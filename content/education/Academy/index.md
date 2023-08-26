@@ -11,3 +11,4 @@ url: 'http://www.emat.defense.tn/index.php/fr/formation-des-officiers-fr/present
 - Ballistic and aerodynamic analysis: Understanding the physics of projectiles and flight.
 - Materials and manufacturing: Knowledge of materials properties and manufacturing techniques.
 - Testing and evaluation: Assessing weapon performance and safety.
+- Logistic and maintenance

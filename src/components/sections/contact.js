@@ -13,6 +13,7 @@ const StyledContactSection = styled.section`
     margin: 0 auto 50px;
   }
 
+
   .overline {
     display: block;
     margin-bottom: 20px;
